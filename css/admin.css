@@ -1,0 +1,827 @@
+/* Thi section is for the admin login starts here */
+.login-page{
+  background-color: #008b8b;
+  width: 60%;
+  margin-top: 14%;
+  margin-left: 20%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px white;
+  transition: 0.2s all ease-in;
+}
+.login-page:hover{
+  box-shadow: 0px 0px 0px white;
+  transition: 0.3s all ease-in;
+}
+.login-page .login-header{
+  text-align: center;
+  color: white;
+}
+.login-page form a{
+  color: gold;
+  text-decoration: none;
+}
+.login-page form input[type="submit"]{
+  background-color: gold;
+}
+/* Thi section is for the admin login ends here */
+
+/* This section is for the navigation layer starts here */
+.nav.navbar-nav.navbar-right li a img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid green;
+}
+/* This section is for the navigation layer ends here */
+
+/* This is for the CONTENT page starts here */
+.CONTENT{
+  margin-top: 52px;
+  background-color: black;
+}
+/* This is for the CONTENT page ends here */
+
+/* This is the section for sideNav starts here */
+.sideNav{
+  background-color: white;
+  width: 60px;
+  padding: 10px 0;
+  position: fixed;
+  height: 1000vh;
+  left: 0;
+  top: 15px;
+  z-index: 10;
+    transition: 0.4s all ease-in-out;
+  /* remember to make the height:  same as the browser screen.height is js */
+}
+.sideNav:hover{
+  background-color: white;
+  width: 180px;
+}
+.sideNav:hover a{
+  visibility: visible;
+  transition: 0.1s all ease-in;
+}
+.sideNav:hover span.active{
+  background-color: transparent;
+}
+.sideNav ul{
+  list-style: none;
+}
+.sideNav ul li{
+  display: block;
+  margin-bottom: -15px;
+  margin-left: -40px;
+}
+.sideNav ul li a{
+  padding: 1em;
+  display: block;
+  white-space: nowrap;
+  text-decoration: none;
+  padding-left: 60px;
+  width: 180px;
+  visibility: hidden;
+}
+.sideNav ul li a b{
+  background-color: blue;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+}
+.sideNav ul li span.active{
+  background-color: gold;
+  color: black;
+  padding: 10px 45px 10px 20px;
+  margin-left: -20px;
+}
+.sideNav ul li span.hactive{
+  background-color: gold;
+  color: black;
+  padding: 10px 15px 10px 20px;
+  margin-left: -20px;
+}
+.sideNav ul li a:hover{
+  background-color: gold;
+}
+.sideNav ul li span{
+  font-size: 25px;
+  margin-right: 10px;
+  position: relative;
+  top: 45px;
+  left: 15px;
+}
+.glyphicon.glyphicon-dashboard{
+  color: purple;
+}
+.glyphicon.glyphicon-picture{
+  color: green;
+}
+.glyphicon.glyphicon-envelope{
+  color: brown;
+}
+.glyphicon.glyphicon-cog{
+  color: black;
+}
+.fa.fa-comment{
+  color: orange;
+}
+.fa.fa-user-plus{
+  color: darkblue;
+}
+.glyphicon.glyphicon-off{
+  color: red;
+}
+.fa.fa-shopping-bag{
+  color: hotpink;
+}
+/* This is the section for sideNav ends here */
+
+/* This is the section for the mainContent starts here */
+.mainContent{
+  background-color: #efefef;
+  height: auto;
+  padding-left: 70px;
+  padding-top: 20px;
+}
+.mainContent .dashboard{
+}
+.mainContent .dashboard .dashboard-header{
+  padding: 0 20px 10px 20px;
+  margin-bottom: 20px;
+}
+.mainContent .dashboard .dashboard-header h2{
+  clear: both;
+}
+.mainContent .dashboard .dashboard-header p{
+  float: right;
+  margin-top: -10px;
+}
+.mainContent .dashboard .dashboard-content{
+  background-color: white;
+  padding: 30px 10px;
+  /* margin-bottom: 300px; */
+}
+.mainContent .dashboard .dashboard-content .box{
+  background-color: gold;
+  width: 30%;
+  height: auto;
+  border-radius: 20px;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  color: white;
+}
+.mainContent .dashboard .dashboard-content .box h4{
+  color: black;
+}
+.mainContent .dashboard .dashboard-content .box p{
+  color: green;
+}
+.mainContent .dashboard .dashboard-content .space{
+  clear: both;
+}
+.mainContent .footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  /* margin-top: 20px;
+  position: absolute;*/
+  z-index: 0;
+  width: 100%;
+  left: -0.1%;
+  bottom: 0;
+}
+/* This is the section for the mainContent ends here */
+
+
+/* This section is for the upload page starts here */
+.fa.fa-check{
+  color: green;
+}
+.fa.fa-close{
+  color: red;
+}
+
+/* This section is for the table starts here */
+.myTable{
+  background-color: white;
+  margin-top: 20px;
+  padding: 10px;
+}
+.myTable .table-header{
+  text-align: left;
+}
+.myTable .table-content{
+  /* background-color: blue; */
+}
+.myTable .table-content .table-action{
+  /* background-color: yellow; */
+}
+.myTable .table-content .table-action span{
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.myTable .table-content .table-action span a{
+  background-color: #2b7683;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: #ff9800;
+  text-decoration: none;
+  transition: all ease-in 0.3s;
+}
+.myTable .table-content .table-action span a:hover{
+  transition: 0.2s all ease-in;
+  background-color: #ff9800;
+  color: #2b7683;
+}
+.myTable .table-content .table-action .table-control{
+  float: right;
+  margin-bottom: 10px;
+}
+.myTable .table-content .table-action .table-control input{
+  border-top-left-radius: 10px;
+  /* border-bottom-left-radius: 10px; */
+  padding: 0.6em;
+  border: 1px solid #2b7683;
+}
+.myTable .table-content .table-action .table-control input:focus{
+  box-shadow: 3px 5px 10px black;
+}
+.myTable .table-content .table-action .table-control select.office{
+  padding: 0.6em;
+  border: 1px solid #2b7683;
+}
+.myTable .table-content .table-action .table-control select.office option{
+  padding: 0.4em;
+}
+.myTable .table-content .table-responsive{
+  overflow: hidden;
+  height: 500px;
+}
+.myTable .table-content .table-responsive:hover{
+  overflow: auto;
+}
+.myTable .table-content .table-responsive table.table{
+  margin-bottom: 50px;
+}
+.myTable .table-content .table-responsive table.table tr th{
+  background-color: #2b7683;
+  color: #ff9800;
+  transition: all ease 0.2s;
+}
+.myTable .table-content .table-responsive table.table tr:hover{
+  background-color: rgba(43,118,131,0.8);
+  color: #ff9800;
+  transition: all ease 0.3s;
+  cursor: pointer;
+
+}
+.tant{
+  clear: both;
+}
+/* This section is for the table ends here */
+
+/* This is the section for the registeration starts here */
+.tab{
+  background-color: white;
+  padding-top: 20px;
+}
+.tab-content .tab-pane .header{
+  text-align: center;
+}
+.tab-content .tab-pane .header h2{
+  color: #ff9800;
+}
+.tab-content .tab-pane .header p{
+  font-style: italic;
+}
+.tab-content .tab-pane .change-section{
+  margin-top: 50px;
+}
+.tab-content .tab-pane .change-section .food-section,
+.tab-content .tab-pane .change-section .weeklyspecial{
+  width: 45%;
+  float: left;
+  margin-left: 2%;
+}
+.tab-content .tab-pane .form-section{
+  margin: 0 20px;
+}
+/* This is the section for the registeration ends here */
+
+/* This is the section for the order starts here */
+.order-content{
+  background-color: white;
+  padding: 20px;
+}
+.order-content p a{
+  background-color: #2b7683;
+  padding: 0.5em;
+  border-radius: 5px;
+  float: left;
+  margin-left: 10px;
+  color: #ff9800;
+  text-decoration: none;
+  transition: all ease-in 0.3s;
+}
+.order-content p a:hover{
+  transition: 0.2s all ease-in;
+  background-color: #ff9800;
+  color: #2b7683;
+}
+.order-content ul.subList{
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  list-style: none;
+}
+.order-content ul.subList li{
+  display: block;
+}
+.order-content ul.subList li a{
+  padding: 0.3em;
+  margin-left: -30px;
+  background-color: #2b7683;
+  white-space: nowrap;
+  margin-top: 100px;
+}
+.order-content input[type="search"]{
+  float: right;
+  margin-bottom: 10px;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px #2b7683 solid;
+}
+.order-content .table-responsive{
+  height: 500px;
+  overflow: auto;
+}
+.order-content .table-responsive .table tr th{
+  background-color: #2b7683;
+  color: #ff9800;
+  white-space: nowrap;
+}
+.order-content .table-responsive .table tr{
+  transition: 0.2s all ease;
+}
+.order-content .table-responsive .table tr:hover{
+  background-color: #2b7683;
+  color: white;
+  transition: 0.3s all ease-in;
+}
+.order-content .table-responsive .table tr td img{
+  width: 50px;
+  height: 50px;
+}
+.order-content .table-responsive .table tr td span.acceptOrder{
+  color: green;
+  font-size: 20px;
+  cursor: pointer;
+}
+.order-content .table-responsive .table tr td span.deleteOrder{
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* This is the section for the order ends here */
+
+/* This section is for the email starts here */
+.email{
+  /* background-color: white; */
+}
+.email .col-sm-2{
+  background-color: #008b8b;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+.email .col-sm-2 ul{
+  list-style: none;
+}
+.email .col-sm-2 ul li{
+  display: block;
+  margin-bottom: 10px;
+}
+.email .col-sm-2 ul li a{
+  display: block;
+  padding: 1em;
+  white-space: nowrap;
+  text-decoration: none;
+  /* background-color: gold; */
+  width: 100%;
+  margin-left: -20px;
+  color: white;
+  border-radius: 10px;
+  transition: 0.4s all ease-in;
+}
+.email .col-sm-2 ul li a.compose{
+  background-color: red;
+}
+.email .col-sm-2 ul li a:hover{
+  background-color: gold;
+  transition: 0.2s all ease-in;
+}
+.fa.fa-edit{
+  color: yellow;
+}
+.fa.fa-envelope-o{
+  color: brown;
+}
+.fa.fa-external-link{
+  color: green;
+}
+.fa.fa-folder-open{
+  color: black;
+}
+.glyphicon.glyphicon-trash{
+  color: red;
+}
+.email .col-sm-10{
+  background-color: rgba(0,139,139,0.1);
+  margin-bottom: 80px;
+}
+.email .col-sm-10 table tr{
+  cursor: pointer;
+  border-top: 2px solid white;
+}
+.email .col-sm-10 table tr:hover{
+  background-color: #008b8b;
+}
+.email .col-sm-10 table tr th{
+  background-color: #008b8b;
+  color: white;
+}
+.email .col-sm-10 .part-two{
+  /* background-color: green; */
+  padding: 10px;
+  border-radius: 10px;
+}
+.email .col-sm-10 .part-two .section-header{
+}
+.email .col-sm-10 .part-two .section-header .content-img{
+  float: left;
+  width: 35px;
+  background-color: gold;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 10%;
+  /* text-align: center; */
+}
+.email .col-sm-10 .part-two .section-header .content-details{
+  float: left;
+  width: 50%;
+  margin-left: 10px;
+}
+.email .col-sm-10 .part-two .section-header .content-action{
+  float: right;
+  width: 20%;
+  margin-left: 10px;
+}
+.email .col-sm-10 .part-two .section-header .content-action span.action{
+  float: right;
+  cursor: pointer;
+  color: red;
+}
+.email .col-sm-10 .part-two .section-header .content-action .hidden-btn{
+
+}
+.email .col-sm-10 .part-two .section-header .content-action .hidden-btn ul{
+  list-style: none;
+  background-color: white;
+  width: 150px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 5;
+}
+.email .col-sm-10 .part-two .section-header .content-action .hidden-btn ul li{
+  display: block;
+  margin-bottom: 2px;
+}
+.email .col-sm-10 .part-two .section-header .content-action .hidden-btn ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+  display: block;
+  margin-left: -40px;
+  border-radius: 10px;
+  transition: 0.3s all ease-in;
+}
+.email .col-sm-10 .part-two .section-header .content-action .hidden-btn ul li a:hover{
+transition: 0.3s all ease-in;
+  background-color: gold;
+}
+.email .col-sm-10 .part-two .section-content{
+  border-top: 1px solid black;
+  clear: both;
+  background: white;
+  padding: 10px;
+  border-left: 5px solid #008b8b;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.feedBack{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: gold;
+  padding: 20px;
+  border-radius: 20px;
+}
+/* This section is for the email ends here */
+
+
+  /* The section for add co Administrator and edit adminprofile starts here */
+.addAdmin{
+  background-color: white;
+  padding: 10px 60px;
+}
+  /* The section for add co Administrator and edit adminprofile ends here */
+ /* This section is for the chat room starts here */
+.chat-room{
+}
+.chat-room .col-sm-3.contact{
+  background-color: #008b8b;
+}
+.chat-room .col-sm-3.contact .tab ul.nav{
+  background-color: black;
+}
+.chat-room .col-sm-3.contact .tab-content{
+  margin-left: -15px;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane{
+  height: auto;
+  overflow: hidden;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane ul{
+  height: 100vh;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane ul:hover{
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane ul li{
+  cursor: pointer;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane ul li img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid green;
+  position: relative;
+  left:  -40px;
+  top: 10px;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane ul li .admin-content{
+  border-bottom: 2px solid gold;
+  position: relative;
+  left: 10px;
+  top: -70px;
+  border-radius: 10px;
+  transition: 0.2s all ease;
+  /* color: white; */
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane ul li .admin-content:hover{
+  padding-left: 10px;
+  background-color: gold;
+  transition: 0.4s all ease;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane ul li .admin-content .admin-name{
+  color: white;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane ul li .admin-content .admin-msg-time{
+  color: red;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane ul li .admin-content .admin-short-msg{
+  color: black;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane .adminGroup,
+.chat-room .col-sm-3.contact .tab-content .tab-pane .coAdminGroup{
+  background-color: white;
+  padding: 10px 0px 10px 20px;
+  margin: 10px auto;
+  margin-left: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane .adminGroup{
+  border-left: 5px solid gold;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane .adminGroup:hover{
+  background-color: gold;
+  border-left: 5px solid white;
+  color: white;
+  transition: 0.3s all ease-in;
+  padding: 10px 0px 10px 10px;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane .adminGroup:hover span{
+  color: white;
+  transition: 0.3s all ease-in;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane .coAdminGroup{
+  border-left: 5px solid blue;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane .coAdminGroup:hover{
+  background-color: blue;
+  border-left: 5px solid white;
+  color: white;
+  transition: 0.3s all ease-in;
+  padding: 10px 0px 10px 10px;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane .coAdminGroup:hover span{
+  color: white;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane .adminGroup span,
+.chat-room .col-sm-3.contact .tab-content .tab-pane .coAdminGroup span{
+  position: relative;
+  top: -30px;
+  left: 190px;
+  font-size: 20px;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane .adminGroup span{
+  color: gold;
+}
+.chat-room .col-sm-3.contact .tab-content .tab-pane .coAdminGroup span{
+  color: blue;
+}
+.chat-room .col-sm-9 .single-chat-content{
+  background-image: url(../img/singleChatBg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: black;
+  overflow: hidden;
+  height: 600px;
+}
+.chat-room .col-sm-9 .single-chat-content:hover{
+  overflow-y: auto;
+}
+.chat-room .col-sm-9 .single-chat-content .received-chat{
+  /* background: blue; */
+  padding: 10px;
+}
+.chat-room .col-sm-9 .single-chat-content .received-chat .received-chat-content{
+  background-color: #008b8b;
+  width: 70%;
+  color: white;
+  position: relative;
+  top: -30px;
+  left: 35px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.chat-room .col-sm-9 .single-chat-content .received-chat .received-chat-content .received-chat-time{
+  float: right;
+  margin-top: 5px;
+}
+.chat-room .col-sm-9 .single-chat-content .received-chat img,
+.chat-room .col-sm-9 .single-chat-content .sent-chat img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.chat-room .col-sm-9 .single-chat-content .sent-chat img{
+  float: right;
+}
+.chat-room .col-sm-9 .single-chat-content .sent-chat{
+  /* background-color: pink; */
+  padding: 10px;
+}
+
+.chat-room .col-sm-9 .single-chat-content .sent-chat .sent-chat-content{
+  background-color: white;
+  width: 70%;
+  text-align: right;
+  position: relative;
+  top: -30px;
+  left:200px;
+  /* Remeber to change to 30px in media query */
+  padding: 5px;
+  border-radius: 10px;
+  clear: both;
+}
+.chat-room .col-sm-9 .single-chat-content .sent-chat .sent-chat-content .sent-chat-time{
+  float: left;
+  color: white;
+  margin-top: 5px;
+}
+.chat-room .col-sm-9.content .group-chat-content{
+  background-image: url(../img/adminChatBg.jpg);
+  /* background-color: black; */
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  overflow: hidden;
+  height: 600px;
+}
+.chat-room .col-sm-9.content .group-chat-content:hover{
+  overflow-y: auto;
+}
+.chat-room .col-sm-9.content .group-chat-content .received-chat{
+  /* background: blue; */
+  padding: 10px;
+}
+.chat-room .col-sm-9.content .group-chat-content .received-chat .received-chat-content{
+  background-color: #008b8b;
+  width: 70%;
+  color: white;
+  position: relative;
+  top: -30px;
+  left: 35px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.chat-room .col-sm-9.content .group-chat-content .received-chat .received-chat-content .received-chat-time{
+  float: right;
+  margin-top: 5px;
+}
+.chat-room .col-sm-9.content .group-chat-content .received-chat img,
+.chat-room .col-sm-9.content .group-chat-content .sent-chat img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.chat-room .col-sm-9.content .group-chat-content .sent-chat img{
+  float: right;
+}
+.chat-room .col-sm-9.content .group-chat-content .sent-chat{
+  /* background-color: pink; */
+  padding: 10px;
+}
+
+.chat-room .col-sm-9.content .group-chat-content .sent-chat .sent-chat-content{
+  background-color: white;
+  width: 70%;
+  text-align: right;
+  position: relative;
+  top: -30px;
+  left:200px;
+  /* Remeber to change to 30px in media query */
+  padding: 5px;
+  border-radius: 10px;
+  clear: both;
+}
+.chat-room .col-sm-9.content .group-chat-content .sent-chat .sent-chat-content .sent-chat-time{
+  float: left;
+  color: white;
+  margin-top: 5px;
+}
+ /* This section is for the chat room ends here */
+
+
+
+
+
+/* This section is for the footer starts here */
+
+/* This section is the end of the footer */
+
+/* =================================This is the start of the media query============================ */
+/* ==================================================================================================== */
+@media (min-width: 320px) and (max-width: 400px) {
+  /* This is the section for the mainContent starts here */
+  .mainContent{
+    background-color: #efefef;
+    padding-left: 0px;
+  }
+  .mainContent .dashboard .dashboard-content{
+    background-color: red;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .mainContent .dashboard .dashboard-content .box{
+    width: 100%;
+    float: left;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  /* This is the section for the mainContent ends here */
+
+
+  /* This section is for the email starts here */
+
+  .email .col-sm-10 .part-two .section-header .content-action span.action{
+    margin-left: 20px;
+  }
+  .email .col-sm-10 .part-two .section-header .content-action .hidden-btn ul{
+    width: 120px;
+    right: 60px;
+  }
+  /* This section is for the email ends here */
+
+  /* This section is for the email starts here */
+
+  .chat-room .col-sm-9 .single-chat-content .sent-chat .sent-chat-content,
+  .chat-room .col-sm-9.content .group-chat-content .sent-chat .sent-chat-content{
+    left:65px;
+  }
+  /* This section is for the email ends here */
+}

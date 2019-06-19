@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ikwegbu George Chinedu Iheanyichukwu">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <meta name="description" content="PngGet stands for Portable Network Graphics Get, where PNG images can be downloaded by users for easy integration into their work. This has so many categories, ranging from nature, food, meal, cars, aeroplanes, ships, keke, houses, buildings, electronics, cloths, etc.">
+    <meta name="keywords" content="We provide images without backgrounds so as to help users who doesn\'t know how remove image backgrounds with any Graphics software. This has so many categories, ranging from nature, food, meal, cars, aeroplanes, ships, keke, houses, buildings, electronics, cloths, etc.">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../img/favicon.jpg" size="16*16" type="image/png">
+    <title>George Delivery Service -Edit Admin</title>
+  </head>
+  <body>
+
+    <!-- This is for the horizontal navigation bar starts here -->
+    <nav class="nav-bar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-camera"></span> GDS - Administrator</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#georgeNavbar">
+             <i class="fa fa-2x fa-angle-double-down wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-iteration="infinite"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="georgeNavbar">
+          <ul class="nav navbar-nav navbar-left hidden-lg">
+            <li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+            <li><a href="uploads.html"><span class="glyphicon glyphicon-picture"></span> Registeration</a></li>
+            <li><a href="order.html"><span class="fa fa-shopping-bag"></span> Order Menu</a></li>
+            <li><a href="email.html"><span class="glyphicon glyphicon-envelope"></span> Email</a></li>
+            <li><a href="chat.html"><span class="fa fa-comment"></span> Chat</a></li>
+            <li><a href="addadmin.html"><span class="fa fa-user-plus"></span> Add Co-Administrator</a></li>
+            <li class="active"><a href="edit.html"><span class="glyphicon glyphicon-cog"></span> Edit Profile</a></li>
+            <li><a href="../_inc/logout.php"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:;"><img src="../img/user.png" alt="">  George </a></li>
+            <li> <a href="javascript:;"></a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- This is for the horizontal navigation bar ends here -->
+
+    <div class="container-fluid">
+      <!-- This is the start of CONTENT section -->
+      <div class="CONTENT">
+        <!-- This is for the vertical navigation bar starts here -->
+        <div class="sideNav hidden-xs">
+          <ul>
+            <li><span class="glyphicon glyphicon-dashboard wow bounce" data-wow-iteration="infinite"></span><a href="index.html">  Dashboard</a></li>
+            <li><span class="glyphicon glyphicon-picture wow tada" data-wow-iteration="infinite"></span><a href="uploads.html">  Registeration</a></li>
+            <li><span class="fa fa-shopping-bag wow shake" data-wow-iteration="infinite"></span> <a href="order.html"> Order Menu</a></li>
+            <li><span class="glyphicon glyphicon-envelope wow flipInX" data-wow-iteration="infinite"></span><a href="email.html">  Email <b>5</b></a></li>
+            <li><span class="fa fa-comment wow rubberBand" data-wow-iteration="infinite"></span><a href="chat.html">  Chat <b>20</b></a></li>
+            <li><span class="fa fa-user-plus"></span> <a href="addAdmin.html">Add Co-Admin</a></li>
+            <li><span class="glyphicon glyphicon-cog active" data-wow-iteration="infinite"></span><a href="edit.html">  Edit Profile</a></li>
+            <li><span class="glyphicon glyphicon-off wow pulse" data-wow-iteration="infinite"></span> <a href="../_inc/logout.php"> Logout</a></li>
+            <!-- <li><a href="#"></a></li>
+            <li><a href="#"></a></li> -->
+          </ul>
+        </div>
+        <!-- This is for the vertical navigation bar ends here -->
+
+        <!-- This is the section for the maincontent starts here -->
+        <div class="mainContent">
+          <div class="dashboard">
+            <div class="dashboard-header">
+              <h2>Edit Administrator Profile</h2>
+              <p>
+                <b>Home</b> <span class="fa fa-caret-right"></span>
+                <i>Edit Admin</i>
+              </p>
+            </div>
+            <div class="addAdmin">
+              <form class="" action="" method="post">
+                <center>
+                  <div class="image">
+                    <img src="../img/user.png" alt="">
+                  </div><br>
+                  <input type="file" name="" value="">
+                </center>
+                <div class="form-group">
+                  <label for="Email:">Email:</label>
+                  <input type="email" name="" placeholder="Enter Email" required class="form-control" value="">
+                </div>
+                <div class="form-group">
+                  <label for="Password:">Old Password:</label>
+                  <input type="password" name="" placeholder="Enter Old Password" required class="form-control" value="">
+                </div>
+                <div class="form-group">
+                  <label for="Password:">New Password:</label>
+                  <input type="password" name="" placeholder="Enter New Password" required class="form-control" value="">
+                </div>
+                <div class="form-group">
+                  <label for="Password:">Retype Password:</label>
+                  <input type="password" name="" placeholder="Enter Password" required class="form-control" value="">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-success" name="button">Saver</button>
+                  <button type="reset" class="btn btn-danger" name="button">Clear</button>
+                </div>
+              </form><br><br>
+            </div>
+          </div>
+
+          <!-- This is the start for footer section -->
+          <!-- <div class="footer navbar-fixed-bottom"> -->
+          <div class="footer navbar-fixed-bottom">
+        <!-- <div class="footer"> -->
+            <p>&copy George Delivery Service 2019-<b id="date">2019</b>. All Rights Reserved</p>
+          </div>
+          <!-- This is the end for footer section -->
+        </div>
+        <!-- This is the section for the maincontent ends here -->
+
+
+      </div>
+      <!-- This is the end for the CONTENT section -->
+
+
+
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery-1.10.2.min.js"charset="utf-8"></script>
+  <script src="../js/wow.min.js"charset="utf-8"></script>
+  <script src="../js/ajax.js"charset="utf-8"></script>
+  <script src="../js/George.js"charset="utf-8"></script>
+  <script>
+    new WOW().init();
+  </script>
+</html>

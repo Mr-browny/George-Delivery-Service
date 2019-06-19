@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ikwegbu George Chinedu Iheanyichukwu">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <meta name="description" content="PngGet stands for Portable Network Graphics Get, where PNG images can be downloaded by users for easy integration into their work. This has so many categories, ranging from nature, food, meal, cars, aeroplanes, ships, keke, houses, buildings, electronics, cloths, etc.">
+    <meta name="keywords" content="We provide images without backgrounds so as to help users who doesn\'t know how remove image backgrounds with any Graphics software. This has so many categories, ranging from nature, food, meal, cars, aeroplanes, ships, keke, houses, buildings, electronics, cloths, etc.">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../img/favicon.jpg" size="16*16" type="image/png">
+    <title>Uploads-George Delivery Service</title>
+  </head>
+  <body>
+
+    <!-- This is for the horizontal navigation bar starts here -->
+    <nav class="nav-bar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-camera"></span> GDS - Administrator</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#georgeNavbar">
+             <i class="fa fa-2x fa-angle-double-down wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-iteration="infinite"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="georgeNavbar">
+          <ul class="nav navbar-nav navbar-left hidden-lg">
+            <li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+            <li class="active"><a href="uploads.html"><span class="glyphicon glyphicon-picture"></span> Registeration</a></li>
+            <li><a href="order.html"><span class="fa fa-shopping-bag"></span> Order Menu</a></li>
+            <li><a href="email.html"><span class="glyphicon glyphicon-envelope"></span> Email</a></li>
+            <li><a href="chat.html"><span class="fa fa-comment"></span> Chat</a></li>
+            <li><a href="addadmin.html"><span class="fa fa-user-plus"></span> Add Co-Administrator</a></li>
+            <li><a href="edit.html"><span class="glyphicon glyphicon-cog"></span> Edit Profile</a></li>
+            <li><a href="../_inc/logout.php"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:;"><img src="../img/user.png" alt="">  George </a></li>
+            <li> <a href="javascript:;"></a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- This is for the horizontal navigation bar ends here -->
+
+    <div class="container-fluid">
+      <!-- This is the start of CONTENT section -->
+      <div class="CONTENT">
+        <!-- This is for the vertical navigation bar starts here -->
+        <div class="sideNav hidden-xs">
+          <ul>
+            <li><span class="glyphicon glyphicon-dashboard wow bounce" data-wow-iteration="infinite"></span><a href="index.html">  Dashboard</a></li>
+            <li><span class="glyphicon glyphicon-picture active" data-wow-iteration="infinite"></span><a href="uploads.html">  Registeration</a></li>
+            <li><span class="fa fa-shopping-bag wow shake" data-wow-iteration="infinite"></span> <a href="order.html"> Order Menu</a></li>
+            <li><span class="glyphicon glyphicon-envelope wow flipInX" data-wow-iteration="infinite"></span><a href="email.html">  Email <b>5</b></a></li>
+            <li><span class="fa fa-comment wow rubberBand" data-wow-iteration="infinite"></span><a href="chat.html">  Chat <b>20</b></a></li>
+            <li><span class="fa fa-user-plus"></span> <a href="addAdmin.html">Add Co-Admin</a></li>
+            <li><span class="glyphicon glyphicon-cog wow rotateIn" data-wow-iteration="infinite"></span><a href="edit.html">  Edit Profile</a></li>
+            <li><span class="glyphicon glyphicon-off wow pulse" data-wow-iteration="infinite"></span> <a href="../_inc/logout.php"> Logout</a></li>
+            <!-- <li><a href="#"></a></li>
+            <li><a href="#"></a></li> -->
+          </ul>
+        </div>
+        <!-- This is for the vertical navigation bar ends here -->
+
+        <!-- This is the section for the maincontent starts here -->
+        <div class="mainContent">
+          <div class="dashboard">
+            <div class="dashboard-header">
+              <h2>Review Uploads</h2>
+              <p>
+                <b>Home</b> <span class="fa fa-caret-right"></span>
+                <i>Registeration</i>
+              </p>
+            </div>
+            <div class="tab">
+                  <ul class="nav nav-tabs nav-justified" role="tablist">
+                      <li role="presentation" class="active"><a  href="#addFood" aria-controls="addFood" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-list-alt"></span> Add & Edit Food</a> </li>
+                      <li role="presentation"><a href="#addCustomer" aria-controls="addCustomer" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-user"></span> Add Customer</a> </li>
+                      <li role="presentation"><a href="#addRestaurant" aria-controls="addRestaurant" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-signal"></span> Add Restaurant</a> </li>
+                      <li role="presentation"><a href="#addStaff" aria-controls="addStaff" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-qrcode"></span> Add Staff</a> </li>
+                      <li role="presentation"><a href="#addAgent" aria-controls="addAgent" role="tab" data-toggle="tab"><span class="fa fa-user-secret"></span> Add Agent</a> </li>
+                  </ul>
+
+                  <!--Tab panes-->
+                  <div class="tab-content">
+
+                      <div class="tab-pane fade in active" id="addFood" role="tabpanel">
+                        <div class="change-section">
+                          <div class="food-section">
+                            <div class="tab">
+                              <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li role="presentation" class="active"><a href="#add" role="tab" data-toggle="tab">ADD</a> </li>
+                                <li role="presentation"><a href="#edit" role="tab" data-toggle="tab">EDIT</a> </li>
+                              </ul>
+                              <div class="tab-content">
+                                <div class="tab-pane fade in active" id="add" role="tabpanel">
+                                  <h2>Add To Food Menu</h2>
+                                    <form class="form" action="" method="GET" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <label for="Name" class="control-label">Name:</label>
+                                            <input type="text" class="form-control" placeholder="Item name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Description" class="control-label">Description:</label>
+                                            <input type="text" class="form-control" placeholder="description" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Price" class="control-label">Price(<s>N</s>):</label>
+                                            <input type="text" class="form-control" placeholder="e.g 3000" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Restaurant" class="control-label">Restaurant:</label>
+                                            <select name="" class="form-control">
+                                                <option>Select Restaurant</option>
+                                                <option value="roots">Roots</option>
+                                                <option value="crunches">Crunches</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Item Category" class="control-label">Item Category:</label>
+                                            <select name="" class="form-control" required>
+                                                <option>Select Category</option>
+                                                <option value="">Food</option>
+                                                <option value="">Snacks</option>
+                                                <option value="" id="drink">Drink</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group" id="qty">
+                                            <label for="Item Quantity" class="control-label">Item Quantity:</label>
+                                            <!--                               if the admin selects Drinks, this will be shown else its always hidden-->
+                                            <select name="" class="form-control" required>
+                                                <option>Select Quantity</option>
+                                                <option value="35cl">35cl</option>
+                                                <option value="75cl">75cl</option>
+                                                <option value="1 litre">1 litre</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group" id="desc">
+                                            <label class="control-label" for="Item Description">Item Description:</label>
+                                            <textarea name="desc" cols="" rows="7" placeholder="Additional Description" class="form-control"></textarea>
+                                        </div>
+                                        <input type="submit" id="" name="addItem" value="Add Item" class="form-control btn btn-success"><br>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade in" id="edit" role="tabpanel">
+                                  <!-- Each selected item from the select tag, determines what item is poured from the database into the next div-->
+                                <!--That is  SELECT from Restaurant where Id="roots" kinda-->
+                                <h2>Edit Food Menu</h2>
+                                <form class="form" action="" method="GET" enctype="multipart/form-data">
+                                    <label class="control-label" for=" Restaurant">Restaurant: </label>
+                                    <div class="form-group">
+                                        <select id="" name="" class="form-control">
+                                            <option value="Restaurant">Restaurant</option>
+                                            <option value="Roots">Roots</option>
+                                            <option value="Crunches">Crunches</option>
+                                            <option value="Apples">Apples</option>
+                                            <option value="Ibiza Resort">Ibiza Resort</option>
+                                            <option value="Eat and Tall">Eat and Tall</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for=" Category">Item Category: </label>
+                                        <select id="" name="" class="form-control">
+                                            <option value="Category">Category</option>
+                                            <option value="Food">Food</option>
+                                            <option value="Snacks">Snacks</option>
+                                            <option value="Drinks">Drinks</option>
+                                            <!-- <option value=""></option>-->
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for=" Item"> Item:</label>
+                                        <select id="" name="" class="form-control">
+                                            <option value="">Pepsi</option>
+                                            <option value="">Can malt</option>
+                                            <option value="">Coke</option>
+                                            <option value="">Mirinda</option>
+                                            <option value="">Fanta</option>
+                                            <option value="">Limka</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="Item Edit Name "> Item Change Name:</label>
+                                        <input type="text" name="editName" class="form-control" placeholder="Edit name" value="Pepsi">
+                                        <!--                                            The value will have a jquery code that automatically includes the selected category content-->
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for=" Item Change Quantity">Item Change Quantity: </label>
+                                        <input type="text" name="" class="form-control" placeholder="Change Quantity" value="75cl">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for=" Item change Price">Item change Price: </label>
+                                        <input type="text" name="" class="form-control" placeholder="Change Price" value="450">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for=" Item Change Description">Item Change Description: </label>
+                                        <!--                                                This will be a jquery or php script to pick the initial description and pour in here-->
+                                        <textarea name="changeDesc" id="" cols="20" class="form-control" rows="7" placeholder="Change Description"></textarea>
+                                    </div>
+                                    <input type="submit" id="" name="editItem" value="Edit Item" class="form-control btn btn-success"><br>
+                                </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="weeklyspecial">
+                            <div class="tab">
+                              <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li role="presentation" class="active"><a href="#Add" role="tab" data-toggle="tab">ADD</a> </li>
+                                <li role="presentation"><a href="#Edit" role="tab" data-toggle="tab">EDIT</a> </li>
+                              </ul>
+                              <div class="tab-content">
+                                <div class="tab-pane fade in active" id="Add" role="tabpanel">
+                                  <h2>Add To Weekly Special</h2>
+                                   <form class="addWeekly">
+                                       <div class="form-group">
+                                           <label class="control-label" for="Name">Weekly Special Name:</label>
+                                           <input type="text" name="" class="form-control" placeholder="Item name" required>
+                                       </div>
+                                       <div class="form-group">
+                                           <label class="control-label" for="Price">Weekly Special Price(<s>N</s>):</label>
+                                           <input type="text" name="" class="form-control" placeholder="e.g 600" required>
+                                       </div>
+                                       <div class="form-group">
+                                           <label class="control-label" for="Weekly Special Description:">Weekly Special Description:</label>
+                                           <textarea name="" id="" class="form-control" cols="20" rows="7" placeholder="Weekly Special Description"></textarea>
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="Item Image" class="control-label">Weekly Special  Image:</label><br>
+                                           <!--                               this provides an option where the image shows once its uploaded-->
+                                           <input type="file" class="file" onchange="addImage.call(this)" required>
+                                          <p id="msg"></p>
+                                           <img class="thumbnail itemImage" id="uploadimage" src="../img/admin/potrait.jpg" width="300" height="220">
+                                           <div class="Text"></div>
+                                       </div>
+                                       <input type="submit" name="" value="Add Item" class="form-control btn btn-success">
+                                   </form>
+                                </div>
+
+                                <div class="tab-pane fade in" id="Edit" role="tabpanel">
+                                  <h2>Edit Weekly Special</h2>
+                                  <form class="form-responsive" action="" method="get" enctype="multipart/form-data">
+                                      <div class="form-group">
+                                          <label class="control-label" for=" Select Weekly Special">Select Weekly Special: </label>
+                                          <!--                                           This will contain a list of dropdowns of the available weekly special-->
+                                          <select name="" id="" class="form-control">
+                                            <option value="">Rice</option>
+                                            <option value="">Ugba</option>
+                                            <option value="">Ofe Achara</option>
+                                            <option value="">Pizza</option>
+                                            <option value="">Chicken Sauce</option>
+                                            <option value="">Afghanistan Spaghetti</option>
+                                            <option value="">Punani</option>
+                                            <option value="">Brown Noodles</option>
+                                            <option value="">Fruit Salad</option>
+                                            <option value="">Burgarrito</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="Weekly Special Name" class="control-label">Weekly Special Name:</label>
+                                          <input type="text" name="specialName" class="form-control" placeholder="Change Name" value="Rice">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="Weekly Special Desc" class="control-label">Weekly Special Description:</label>
+                                          <textarea cols="20" rows="3" name="specialDesc" class="form-control" placeholder="Change Description"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="Weekly Special Price" class="control-label">Weekly Special Price (<s>N</s>):</label>
+                                          <input type="text" name="specialPrice" class="form-control" placeholder="Change Price" value="400">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="Item Image" class="control-label">Weekly Special Image:</label>
+                                          <!--                                          Jquery will be used along with php and ajax to add the image here. and to be styled in css-->
+                                            <input type="file" onchange="previewUpload.call(this)" class="file">
+                                            <p id="errorMsg"></p>
+                                          <img src="../img/admin/potrait.jpg" id="uploadImage" class="thumbnail itemImage" width="300" height="220">
+                                          <div id="text" style="display:none;"></div>
+                                      </div>
+                                      <input type="submit" name="" value="Edit Item" class="form-control btn btn-success">
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tant"></div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="addCustomer" role="tabpanel">
+                        <div class="header">
+                          <h2>Add customer</h2>
+                          <p>Fill the form below to add a customer. Forms with <b>*</b> are required.</p>
+                        </div>
+                        <div class="form-section">
+                          <form class="form" action="" method="post">
+                            <div class="form-group">
+                              <label for="Name">Name: <b>*</b> </label>
+                              <input type="text" class="form-control" required placeholder="Enter name..." name="" value="">
+                            </div>
+                            <div class="form-group">
+                              <label for="Phone Number">Phone Number: <b>*</b> </label>
+                              <input type="text" class="form-control" required placeholder="Enter Phone Number..." name="" value="">
+                            </div>
+                            <div class="form-group">
+                              <label for="Email">Email: <b>*</b> </label>
+                              <input type="text" class="form-control" required placeholder="Enter Email..." name="" value="">
+                            </div>
+                            <div class="form-group">
+                              <label for="Password">Password: <b>*</b> </label>
+                              <input type="text" class="form-control" required placeholder="Enter Password..." name="" value="">
+                            </div>
+                            <div class="form-group">
+                              <label for="confirm Password">confirm Password: <b>*</b> </label>
+                              <input type="text" class="form-control" required placeholder="confirm Password..." name="" value="">
+                            </div>
+                            <div class="form-group">
+                              <input type="submit" class="form-control btn btn-success" name="" value="Add Customer">
+                            </div>
+                          </form>
+                        </div><br>
+                      </div>
+
+                      <div class="tab-pane fade" id="addRestaurant" role="tabpanel">
+                        <div class="header">
+                          <h2>Add Restaurant</h2>
+                          <p>Fill the form below to add a restaurant. Forms with <b>*</b> are required.</p>
+                        </div>
+                        <div class="form-section">
+                          <form class="form" action="" method="post">
+                          <div class="form-group">
+                            <label for="Name">Name: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Restaurant name..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Rc Number">Rc Number: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Restaurant Rc Number..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Phone Number">Phone Number: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Restaurant Phone Number..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Email">Email: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Restaurant Email..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Password">Password: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter Password..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="confirm Password">confirm Password: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="confirm Password..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <input type="submit" class="form-control btn btn-success" name="" value="Add Customer">
+                          </div>
+                        </form>
+                       </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="addStaff" role="tabpanel">
+                        <div class="header">
+                          <h2>Add Staff</h2>
+                          <p>Fill the form below to add a staff. Forms with <b>*</b> are required.</p>
+                        </div>
+                        <div class="form-section">
+                          <form class="form" action="" method="post">
+                          <div class="form-group">
+                            <label for="Name">Name: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter name..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Address">Address: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter Address..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Phone Number">Phone Number: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter Phone Number..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Email">Email: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter Email..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Password">Password: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter Password..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="confirm Password">confirm Password: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="confirm Password..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <input type="submit" class="form-control btn btn-success" name="" value="Add Customer">
+                          </div>
+                        </form>
+                        </div>
+
+                      </div>
+
+
+                      <div class="tab-pane fade" id="addAgent" role="tabpanel">
+                        <div class="header">
+                          <h2>Add Agent</h2>
+                          <p>Fill the form below to add a agent. Forms with <b>*</b> are required.</p>
+                        </div>
+                        <div class="form-section">
+                          <form class="form" action="" method="post">
+                          <div class="form-group">
+                            <label for="Name">Name: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter name..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Address">Address: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter Address..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Phone Number">Phone Number: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter Phone Number..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Email">Email: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter Email..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="Password">Password: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="Enter Password..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <label for="confirm Password">confirm Password: <b>*</b> </label>
+                            <input type="text" class="form-control" required placeholder="confirm Password..." name="" value="">
+                          </div>
+                          <div class="form-group">
+                            <input type="submit" class="form-control btn btn-success" name="" value="Add Customer">
+                          </div>
+                        </form>
+                        </di>
+                      </div><br><br>
+
+
+                  </div>
+
+                  <br><br><br>
+          </div>
+
+          <!-- This is the start for footer section -->
+          <div class="footer navbar-fixed-bottom">
+        <!-- <div class="footer"> -->
+            <p>&copy George Delivery Service 2019-<b id="date">2019</b>. All Rights Reserved</p>
+          </div>
+          <!-- This is the end for footer section -->
+        </div>
+        <!-- This is the section for the maincontent ends here -->
+
+
+      </div>
+      <!-- This is the end for the CONTENT section -->
+
+
+    </div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery-1.10.2.min.js"charset="utf-8"></script>
+  <script src="../js/wow.min.js"charset="utf-8"></script>
+  <script src="../js/ajax.js"charset="utf-8"></script>
+  <script src="../js/George.js"charset="utf-8"></script>
+    <script src="../js/Ikwegbu.js"charset="utf-8"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script type="text/javascript">
+    function previewUpload(){
+      if(this.files && this.files[0]){
+        var reader = new FileReader();
+        var fileType = this.files[0].type;
+        var fileSize = this.files[0].size;
+        var text = document.getElementById('text');
+        var image = document.getElementById('uploadImage');
+        var errorMsg = document.getElementById('errorMsg');
+        var pixCat = ['image/jpeg','image/jpg','image-png'];
+
+        if ((fileType == pixCat[0]) || (fileType == pixCat[1]) || (fileType == pixCat[2]))  {
+          reader.onload = function(e){
+              image.src = e.target.result;
+              text.innerHTML = image.src;
+              errorMsg.style.display = 'none';
+          }
+          reader.readAsDataURL(this.files[0]);
+        } else {
+          image.src = '';
+          text.innerHTML = image.src;
+          errorMsg.style.display = 'block';
+          errorMsg.innerHTML = 'Please upload an Image';
+        }
+
+
+      }
+    }
+
+    function addImage(){
+      if(this.files && this.files[0]){
+        var reader = new FileReader();
+        var fileType = this.files[0].type;
+        var fileSize = this.files[0].size;
+        var text = document.getElementById('Text');
+        var image = document.getElementById('uploadimage');
+        var errorMsg = document.getElementById('msg');
+        var pixCat = ['image/jpeg','image/jpg','image-png'];
+
+        if ((fileType == pixCat[0]) || (fileType == pixCat[1]) || (fileType == pixCat[2]))  {
+          reader.onload = function(e){
+              image.src = e.target.result;
+              text.innerHTML = image.src;
+              errorMsg.style.display = 'none';
+          }
+          reader.readAsDataURL(this.files[0]);
+        } else {
+          image.src = '';
+          text.innerHTML = image.src;
+          errorMsg.style.display = 'block';
+          errorMsg.innerHTML = 'Please upload an Image';
+        }
+
+
+      }
+    }
+  </script>
+</html>

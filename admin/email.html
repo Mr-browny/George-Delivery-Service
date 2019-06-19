@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ikwegbu George Chinedu Iheanyichukwu">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <meta name="description" content="PngGet stands for Portable Network Graphics Get, where PNG images can be downloaded by users for easy integration into their work. This has so many categories, ranging from nature, food, meal, cars, aeroplanes, ships, keke, houses, buildings, electronics, cloths, etc.">
+    <meta name="keywords" content="We provide images without backgrounds so as to help users who doesn\'t know how remove image backgrounds with any Graphics software. This has so many categories, ranging from nature, food, meal, cars, aeroplanes, ships, keke, houses, buildings, electronics, cloths, etc.">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../img/favicon.jpg" size="16*16" type="image/png">
+    <title>George Delivery Service -Admin Email</title>
+  </head>
+  <body>
+
+    <!-- This is for the horizontal navigation bar starts here -->
+    <nav class="nav-bar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-camera"></span> GDS - Administrator</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#georgeNavbar">
+             <i class="fa fa-2x fa-angle-double-down wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-iteration="infinite"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="georgeNavbar">
+          <ul class="nav navbar-nav navbar-left hidden-lg">
+            <li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+            <li><a href="uploads.html"><span class="glyphicon glyphicon-picture"></span> Registeration</a></li>
+            <li><a href="order.html"><span class="fa fa-shopping-bag"></span> Order Menu</a></li>
+            <li class="active"><a href="email.html"><span class="glyphicon glyphicon-envelope"></span> Email</a></li>
+            <li><a href="chat.html"><span class="fa fa-comment"></span> Chat</a></li>
+            <li><a href="addadmin.html"><span class="fa fa-user-plus"></span> Add Co-Administrator</a></li>
+            <li><a href="edit.html"><span class="glyphicon glyphicon-cog"></span> Edit Profile</a></li>
+            <li><a href="../_inc/logout.php"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:;"><img src="../img/user.png" alt="">  George </a></li>
+            <li> <a href="javascript:;"></a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- This is for the horizontal navigation bar ends here -->
+
+    <div class="container-fluid">
+      <!-- This is the start of CONTENT section -->
+      <div class="CONTENT">
+        <!-- This is for the vertical navigation bar starts here -->
+        <div class="sideNav hidden-xs">
+          <ul>
+            <li><span class="glyphicon glyphicon-dashboard wow bounce" data-wow-iteration="infinite"></span><a href="index.html">  Dashboard</a></li>
+            <li><span class="glyphicon glyphicon-picture wow tada" data-wow-iteration="infinite"></span><a href="uploads.html">  Registeration</a></li>
+            <li><span class="fa fa-shopping-bag wow shake" data-wow-iteration="infinite"></span> <a href="order.html"> Order Menu</a></li>
+            <li><span class="glyphicon glyphicon-envelope active" data-wow-iteration="infinite"></span><a href="email.html">  Email <b>5</b></a></li>
+            <li><span class="fa fa-comment wow rubberBand" data-wow-iteration="infinite"></span><a href="chat.html">  Chat <b>20</b></a></li>
+            <li><span class="fa fa-user-plus"></span> <a href="addAdmin.html">Add Co-Admin</a></li>
+            <li><span class="glyphicon glyphicon-cog wow rotateIn" data-wow-iteration="infinite"></span><a href="edit.html">  Edit Profile</a></li>
+            <li><span class="glyphicon glyphicon-off wow pulse" data-wow-iteration="infinite"></span> <a href="../_inc/logout.php"> Logout</a></li>
+            <!-- <li><a href="#"></a></li>
+            <li><a href="#"></a></li> -->
+          </ul>
+        </div>
+        <!-- This is for the vertical navigation bar ends here -->
+
+        <!-- This is the section for the maincontent starts here -->
+        <div class="mainContent">
+          <div class="dashboard">
+            <div class="dashboard-header">
+              <h2>Email</h2>
+              <p>
+                <b>Home</b> <span class="fa fa-caret-right"></span>
+                <i>Email</i> <span class="fa fa-caret-right"></span>
+                <i class="emailSection">Inbox</i>
+              </p>
+            </div>
+            <div class="email">
+              <div class="col-sm-2">
+                <ul>
+                  <li><a href="javascript:;" class="compose"><span class="fa fa-edit"></span> Compose</a></li>
+                  <li><a href="javascript:;" class="inbox"><span class="fa fa-envelope-o"></span> Inbox</a></li>
+                  <li><a href="javascript:;" class="sent"><span class="fa fa-external-link"></span> Sent</a></li>
+                  <li><a href="javascript:;" class="draft"><span class="fa fa-folder-open"></span> Draft</a></li>
+                  <li><a href="javascript:;" class="trash"><span class="glyphicon glyphicon-trash"></span> Trash</a></li>
+                  <!-- <li><a href="javascript:;" class=""></a></li> -->
+                </ul>
+              </div>
+              <div class="col-sm-10">
+                <div class="part-one">
+                  <div class="section-header">
+                    <h2 class="emailSection">Inbox</h2>
+                  </div>
+                  <!-- This is the preamble for each section starts here -->
+                  <div class="section-content">
+                    <!-- This table is for inbox starts here -->
+                    <table class="table Inbox">
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> Select All</th>
+                        <th>Name</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 1</th>
+                        <!-- This will be the id of the message in the database -->
+                        <td class="sender-id">348</td>
+                        <td class="sender-name">Ikwegbu George chinedu</td>
+                        <td class="sender-message">Thanks, I saw my pictures online today, am so happy!!!.</td>
+                        <td class="sender-email">g.Ikwegbu@gmail.com</td>
+                        <td class="sender-time">16/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 2</th>
+                        <td class="sender-id">215</td>
+                        <td class="sender-name">Roseline Agwu</td>
+                        <td class="sender-message">I need more pictures on fashion, Thanks.</td>
+                        <td class="sender-email">Roselineagwu@yahoo.com</td>
+                        <td class="sender-time">17/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 3</th>
+                        <td class="sender-id">502</td>
+                        <td class="sender-name">charles Henry</td>
+                        <td class="sender-message">Any chance I can get perfume Png??</td>
+                        <td class="sender-email">hencharles@ovi.com</td>
+                        <td class="sender-time">18/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 4</th>
+                        <td class="sender-id">8</td>
+                        <td class="sender-name">Buhari Atiku</td>
+                        <td class="sender-message">Get me a png of myself lol.</td>
+                        <td class="sender-email">Butik@vote.ng</td>
+                        <td class="sender-time">16/2/2019</td>
+                      </tr>
+                    </table>
+                    <!-- This table is for inbox ends here -->
+
+                    <!-- This table is for sent starts here -->
+                    <table class="table Sent">
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> Select All</th>
+                        <th>Name</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 1</th>
+                        <td class="sender-id">200</td>
+                        <td class="sender-name">Ikwegbu George chinedu</td>
+                        <td class="sender-message">Thanks, I saw my pictures online today, am so happy!!!.</td>
+                        <td class="sender-email">g.Ikwegbu@gmail.com</td>
+                        <td class="sender-time">16/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 2</th>
+                        <td class="sender-name">Roseline Agwu</td>
+                        <td class="sender-message">I need more pictures on fashion, Thanks.</td>
+                        <td class="sender-email">Roselineagwu@yahoo.com</td>
+                        <td class="sender-time">17/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 3</th>
+                        <td class="sender-name">charles Henry</td>
+                        <td class="sender-message">Any chance I can get perfume Png??</td>
+                        <td class="sender-email">hencharles@ovi.com</td>
+                        <td class="sender-time">18/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 4</th>
+                        <td class="sender-name">Buhari Atiku</td>
+                        <td class="sender-message">Get me a png of myself lol.</td>
+                        <td class="sender-email">Butik@vote.ng</td>
+                        <td class="sender-time">16/2/2019</td>
+                      </tr>
+                    </table>
+                    <!-- This table is for sent ends here -->
+
+                    <!-- This table is for Draft starts here -->
+                    <table class="table Draft">
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> Select All</th>
+                        <th>Name</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 1</th>
+                        <td class="sender-id">109</td>
+                        <td class="sender-name">Ikwegbu George chinedu</td>
+                        <td class="sender-message">Thanks, I saw my pictures online today, am so happy!!!.</td>
+                        <td class="sender-email">g.Ikwegbu@gmail.com</td>
+                        <td class="sender-time">16/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 2</th>
+                        <td class="sender-name">Roseline Agwu</td>
+                        <td class="sender-message">I need more pictures on fashion, Thanks.</td>
+                        <td class="sender-email">Roselineagwu@yahoo.com</td>
+                        <td class="sender-time">17/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 3</th>
+                        <td class="sender-name">charles Henry</td>
+                        <td class="sender-message">Any chance I can get perfume Png??</td>
+                        <td class="sender-email">hencharles@ovi.com</td>
+                        <td class="sender-time">18/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 4</th>
+                        <td class="sender-name">Buhari Atiku</td>
+                        <td class="sender-message">Get me a png of myself lol.</td>
+                        <td class="sender-email">Butik@vote.ng</td>
+                        <td class="sender-time">16/2/2019</td>
+                      </tr>
+                    </table>
+                    <!-- This table is for Draft ends here -->
+
+                    <!-- This table is for Trash starts here -->
+                    <table class="table Trash">
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> Select All</th>
+                        <th>Name</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 1</th>
+                        <td class="sender-id">34</td>
+                        <td class="sender-name">Ikwegbu George chinedu</td>
+                        <td class="sender-message">Thanks, I saw my pictures online today, am so happy!!!.</td>
+                        <td class="sender-email">g.Ikwegbu@gmail.com</td>
+                        <td class="sender-time">16/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 2</th>
+                        <td class="sender-name">Roseline Agwu</td>
+                        <td class="sender-message">I need more pictures on fashion, Thanks.</td>
+                        <td class="sender-email">Roselineagwu@yahoo.com</td>
+                        <td class="sender-time">17/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 3</th>
+                        <td class="sender-name">charles Henry</td>
+                        <td class="sender-message">Any chance I can get perfume Png??</td>
+                        <td class="sender-email">hencharles@ovi.com</td>
+                        <td class="sender-time">18/2/2019</td>
+                      </tr>
+                      <tr>
+                        <th><input type="checkbox" name="" value=""> 4</th>
+                        <td class="sender-name">Buhari Atiku</td>
+                        <td class="sender-message">Get me a png of myself lol.</td>
+                        <td class="sender-email">Butik@vote.ng</td>
+                        <td class="sender-time">16/2/2019</td>
+                      </tr>
+                    </table>
+                    <!-- This table is for Trash ends here -->
+                  </div>
+                  <!-- This is the preamble for each section ends here -->
+                </div>
+                <div class="part-two">
+                  <div class="section-header">
+                    <div class="content-img">
+                      <h2 class="content-gravatar"></h2>
+                    </div>
+                    <div class="content-details">
+                      <h4 class="content-name"></h4>
+                      <p class="content-email"></p>
+                    </div>
+                    <div class="content-action">
+                      <span class="fa fa-cubes action"></span>
+                      <div class="hidden-btn">
+                        <ul>
+                          <li><a href="javascript:;" class="save"><span class="fa fa-folder-open-o"></span> Save</a></li>
+                          <li><a href="javascript:;" class="delete"><span class="glyphicon glyphicon-trash"></span> Delete</a></li>
+                          <li><a href="javascript:;" class="reply"><span class="fa fa-keyboard-o"></span> Reply</a></li>
+                          <li><a href="javascript:;" class="forward"><span class="fa fa-location-arrow"></span> Forward</a></li>
+                        </ul>
+                      </div>
+                      <!-- This will house the save, delete, reply, forward tabs -->
+                    </div>
+                  </div><br><br>
+                  <section class="section-content"></section><br>
+                  <div class="replyDiv">
+                    <form class="form" action="" method="post">
+                      <div class="form-group">
+                        <label for="Reply">Reply:</label>
+                        <textarea name="name" required class="form-control reply" placeholder="Message..." rows="8" cols="80"></textarea>
+                      </div>
+                      <input type="submit" class="form-control btn btn-success" name="" value="Reply">
+                    </form>
+                  </div>
+                </div>
+                <div class="part-three">
+                  <div class="section-header">
+                    <h2>Compose Mail</h2>
+                  </div>
+                  <div class="section-content">
+                    <form class="form" action="" method="post">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="" required placeholder="To:" value="">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="" placeholder="" disabled value="info@PngGet.com">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="" required placeholder="Suject:" value="">
+                      </div>
+                      <div class="form-group">
+                        <textarea name="name"  class="form-control composeMessage" required placeholder="Message..." rows="8" cols="80"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <input type="submit" class="form-control btn btn-success" name="" value="Send">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- This is the start for footer section -->
+          <!-- <div class="footer navbar-fixed-bottom"> -->
+          <div class="footer navbar-fixed-bottom">
+        <!-- <div class="footer"> -->
+            <p>&copy George Delivery Service 2019-<b id="date">2019</b>. All Rights Reserved</p>
+          </div>
+          <!-- This is the end for footer section -->
+        </div>
+        <!-- This is the section for the maincontent ends here -->
+
+
+      </div>
+      <!-- This is the end for the CONTENT section -->
+
+
+
+    </div>
+    <div class="feedBack"></div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery-1.10.2.min.js"charset="utf-8"></script>
+  <script src="../js/wow.min.js"charset="utf-8"></script>
+  <script src="../js/ajax.js"charset="utf-8"></script>
+  <script src="../js/George.js"charset="utf-8"></script>
+  <script>
+    new WOW().init();
+  </script>
+</html>

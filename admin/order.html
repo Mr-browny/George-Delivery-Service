@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ikwegbu George Chinedu Iheanyichukwu">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <meta name="description" content="PngGet stands for Portable Network Graphics Get, where PNG images can be downloaded by users for easy integration into their work. This has so many categories, ranging from nature, food, meal, cars, aeroplanes, ships, keke, houses, buildings, electronics, cloths, etc.">
+    <meta name="keywords" content="We provide images without backgrounds so as to help users who doesn\'t know how remove image backgrounds with any Graphics software. This has so many categories, ranging from nature, food, meal, cars, aeroplanes, ships, keke, houses, buildings, electronics, cloths, etc.">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../img/favicon.jpg" size="16*16" type="image/png">
+    <title>Order Table - George Delivery Service</title>
+  </head>
+  <body>
+
+    <!-- This is for the horizontal navigation bar starts here -->
+    <nav class="nav-bar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-camera"></span> GDS - Administrator</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#georgeNavbar">
+             <i class="fa fa-2x fa-angle-double-down wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-iteration="infinite"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="georgeNavbar">
+          <ul class="nav navbar-nav navbar-left hidden-lg">
+            <li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+            <li><a href="uploads.html"><span class="glyphicon glyphicon-picture"></span> Registeration</a></li>
+            <li class="active"><a href="order.html"><span class="fa fa-shopping-bag"></span> Order Menu</a></li>
+            <li><a href="email.html"><span class="glyphicon glyphicon-envelope"></span> Email</a></li>
+            <li><a href="chat.html"><span class="fa fa-comment"></span> Chat</a></li>
+            <li><a href="addadmin.html"><span class="fa fa-user-plus"></span> Add Co-Administrator</a></li>
+            <li><a href="edit.html"><span class="glyphicon glyphicon-cog"></span> Edit Profile</a></li>
+            <li><a href="../_inc/logout.php"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:;"><img src="../img/user.png" alt="">  George </a></li>
+            <li> <a href="javascript:;"></a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- This is for the horizontal navigation bar ends here -->
+
+    <div class="container-fluid">
+      <!-- This is the start of CONTENT section -->
+      <div class="CONTENT">
+        <!-- This is for the vertical navigation bar starts here -->
+        <div class="sideNav hidden-xs">
+          <ul>
+            <li><span class="glyphicon glyphicon-dashboard wow bounce" data-wow-iteration="infinite"></span><a href="index.html">  Dashboard</a></li>
+            <li><span class="glyphicon glyphicon-picture wow tada" data-wow-iteration="infinite"></span><a href="uploads.html">  Registeration</a></li>
+            <li><span class="fa fa-shopping-bag wow slideIn  hactive"></span> <a href="order.html"> Order Menu</a></li>
+            <li><span class="glyphicon glyphicon-envelope wow flipInX" data-wow-iteration="infinite"></span><a href="email.html">  Email <b>5</b></a></li>
+            <li><span class="fa fa-comment wow rubberBand" data-wow-iteration="infinite"></span><a href="chat.html">  Chat <b>20</b></a></li>
+            <li><span class="fa fa-user-plus"></span> <a href="addAdmin.html">Add Co-Admin</a></li>
+            <li><span class="glyphicon glyphicon-cog" data-wow-iteration="infinite"></span><a href="edit.html">  Edit Profile</a></li>
+            <li><span class="glyphicon glyphicon-off wow pulse" data-wow-iteration="infinite"></span> <a href="../_inc/logout.php"> Logout</a></li>
+            <!-- <li><a href="#"></a></li>
+            <li><a href="#"></a></li> -->
+          </ul>
+        </div>
+        <!-- This is for the vertical navigation bar ends here -->
+
+        <!-- This is the section for the maincontent starts here -->
+        <div class="mainContent">
+          <div class="dashboard">
+            <div class="dashboard-header">
+              <h2><span class="order-type">Food</span> Order Table</h2>
+              <p>
+                <b>Home</b> <span class="fa fa-caret-right"></span>
+                <i>order table</i>
+              </p>
+            </div><hr>
+            <div class="order-content">
+              <p>
+                <a href="javascript:;" class="Food">Food</a>
+                <a href="javascript:;" class="Courier">Courier</a>
+                <a href="javascript:;" class="completed">Completed Order </a>
+                <a href="javascript:;" class="completedF">Food History</a>
+                <a href="javascript:;" class="completedC">Courier History</a>
+              </p>
+              <input type="search"  placeholder="Search by Invoice...">
+              <div class="tant"></div>
+              <div class="table-responsive">
+                <!-- This is the part for the food order starts here -->
+                <table class="table food">
+                  <tr>
+                    <th>S/N</th>
+                    <th>Name</th>
+                    <th title="Phone Number">Telephone</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>Item</th>
+                    <th>Price(<s>N</s>)</th>
+                    <th title="Quantity">QTY</th>
+                    <th title="Charges">Charge(<s>N</s>)</th>
+                    <th>Total(<s>N</s>)</th>
+                    <th>Invoice</th>
+                    <th>Billing</th>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#foodModal">
+                    <td class="sN">1</td>
+                    <td class="name">Ikwegbu George</td>
+                    <td class="number">08101570258</td>
+                    <td class="location">Umuahia</td>
+                    <td class="date">3/1/2019</td>
+                    <td class="item">Rice,Beans, Oka</td>
+                    <td class="price">300,500,700</td>
+                    <td class="quantity">1 cup, 3plates, 1 basket</td>
+                    <td class="charge">20,30,40</td>
+                    <td class="total">20,000</td>
+                    <td class="invoice">3432541Ae34</td>
+                    <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#foodModal">
+                      <td class="sN">2</td>
+                      <td class="name">Justin Bieber</td>
+                      <td class="number">+(98)1570258</td>
+                      <td class="location">Las Vegas</td>
+                      <td class="date">4/2/2019</td>
+                      <td class="item">Pizza,Hotdog</td>
+                      <td class="price">300,500</td>
+                      <td class="quantity">1 cup, 1 basket</td>
+                      <td class="charge">20,40</td>
+                      <td class="total">40,000</td>
+                      <td class="invoice">45872Ytgf6</td>
+                      <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#foodModal">
+                      <td class="sN">3</td>
+                      <td class="name">Justin Bieber</td>
+                      <td class="number">+(98)1570258</td>
+                      <td class="location">Las Vegas</td>
+                      <td class="date">4/2/2019</td>
+                      <td class="item">Pizza,Hotdog</td>
+                      <td class="price">300,500</td>
+                      <td class="quantity">1 cup, 1 basket</td>
+                      <td class="charge">20,40</td>
+                      <td class="total">40,000</td>
+                      <td class="invoice">45872Ytgf6</td>
+                      <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#foodModal">
+                    <td class="sN">4</td>
+                    <td class="name">Ikwegbu George</td>
+                    <td class="number">08101570258</td>
+                    <td class="location">Umuahia</td>
+                    <td class="date">3/1/2019</td>
+                    <td class="item">Rice,Beans, Oka</td>
+                    <td class="price">300,500,700</td>
+                    <td class="quantity">1 cup, 3plates, 1 basket</td>
+                    <td class="charge">20,30,40</td>
+                    <td class="total">20,000</td>
+                    <td class="invoice">npower</td>
+                    <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#foodModal">
+                      <td class="sN">5</td>
+                      <td class="name">Justin Bieber</td>
+                      <td class="number">+(98)1570258</td>
+                      <td class="location">Las Vegas</td>
+                      <td class="date">4/2/2019</td>
+                      <td class="item">Pizza,Hotdog</td>
+                      <td class="price">300,500</td>
+                      <td class="quantity">1 cup, 1 basket</td>
+                      <td class="charge">20,40</td>
+                      <td class="total">40,000</td>
+                      <td class="invoice">veaq4qq3</td>
+                      <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#foodModal">
+                      <td class="sN">6</td>
+                      <td class="name">Justin Bieber</td>
+                      <td class="number">+(98)1570258</td>
+                      <td class="location">Las Vegas</td>
+                      <td class="date">4/2/2019</td>
+                      <td class="item">Pizza,Hotdog</td>
+                      <td class="price">300,500</td>
+                      <td class="quantity">1 cup, 1 basket</td>
+                      <td class="charge">20,40</td>
+                      <td class="total">40,000</td>
+                      <td class="invoice">45872Ytgf6</td>
+                      <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#foodModal">
+                    <td class="sN">7</td>
+                    <td class="name">Ikwegbu George</td>
+                    <td class="number">08101570258</td>
+                    <td class="location">Umuahia</td>
+                    <td class="date">3/1/2019</td>
+                    <td class="item">Rice,Beans, Oka</td>
+                    <td class="price">300,500,700</td>
+                    <td class="quantity">1 cup, 3plates, 1 basket</td>
+                    <td class="charge">20,30,40</td>
+                    <td class="total">20,000</td>
+                    <td class="invoice">Aeadcaeq</td>
+                    <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#foodModal">
+                      <td class="sN">8</td>
+                      <td class="name">Justin Bieber</td>
+                      <td class="number">+(98)1570258</td>
+                      <td class="location">Las Vegas</td>
+                      <td class="date">4/2/2019</td>
+                      <td class="item">Pizza,Hotdog</td>
+                      <td class="price">300,500</td>
+                      <td class="quantity">1 cup, 1 basket</td>
+                      <td class="charge">20,40</td>
+                      <td class="total">40,000</td>
+                      <td class="invoice">azvzbeawe</td>
+                      <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#foodModal">
+                      <td class="sN">9</td>
+                      <td class="name">Justin Bieber</td>
+                      <td class="number">+(98)1570258</td>
+                      <td class="location">Las Vegas</td>
+                      <td class="date">4/2/2019</td>
+                      <td class="item">Pizza,Hotdog</td>
+                      <td class="price">300,500</td>
+                      <td class="quantity">1 cup, 1 basket</td>
+                      <td class="charge">20,40</td>
+                      <td class="total">40,000</td>
+                      <td class="invoice">5rtadfafe</td>
+                      <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#foodModal">
+                    <td class="sN">10</td>
+                    <td class="name">Ikwegbu George</td>
+                    <td class="number">08101570258</td>
+                    <td class="location">Umuahia</td>
+                    <td class="date">3/1/2019</td>
+                    <td class="item">Rice,Beans, Oka</td>
+                    <td class="price">300,500,700</td>
+                    <td class="quantity">1 cup, 3plates, 1 basket</td>
+                    <td class="charge">20,30,40</td>
+                    <td class="total">20,000</td>
+                    <td class="invoice">vcadefre</td>
+                    <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr>
+                      <td class="sN">11</td>
+                      <td class="name">Justin Bieber</td>
+                      <td class="number">+(98)1570258</td>
+                      <td class="location">Las Vegas</td>
+                      <td class="date">4/2/2019</td>
+                      <td class="item">Pizza,Hotdog</td>
+                      <td class="price">300,500</td>
+                      <td class="quantity">1 cup, 1 basket</td>
+                      <td class="charge">20,40</td>
+                      <td class="total">40,000</td>
+                      <td class="invoice">..6r3sdvae</td>
+                      <td class="billing">Credit Card</td>
+                  </tr>
+                  <tr>
+                      <td class="sN">12</td>
+                      <td class="name">Justin Bieber</td>
+                      <td class="number">+(98)1570258</td>
+                      <td class="location">Las Vegas</td>
+                      <td class="date">4/2/2019</td>
+                      <td class="item">Pizza,Hotdog</td>
+                      <td class="price">300,500</td>
+                      <td class="quantity">1 cup, 1 basket</td>
+                      <td class="charge">20,40</td>
+                      <td class="total">40,000</td>
+                      <td class="invoice">xerdwadfe</td>
+                      <td class="billing">Credit Card</td>
+                  </tr>
+                </table>
+                <!-- This is the part for the food order ends here -->
+
+                <!-- This part is for the courier order starts here -->
+                <table class="courier table">
+
+                  <tr>
+                      <th>S/N</th>
+                      <th>Name</th>
+                      <th>Phone Number</th>
+                      <th>Pick up Location</th>
+                      <th>Delivery Location</th>
+                      <th>Delivery Option</th>
+                      <th>Product Cat</th>
+                      <th>Image</th>
+                      <th>Add Info</th>
+                      <th>Invoice</th>
+                  </tr>
+                  <tr  data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">1</td>
+                      <td class="cName">Ella Hamilton</td>
+                      <td class="cTelephone">+(21) 89 809 874</td>
+                      <td class="cpLocation">Asia</td>
+                      <td class="cdLocation">Ghana</td>
+                      <td class="cOption">Immediate</td>
+                      <td class="cCategory">Agricultural produce</td>
+                      <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                      <td class="cAddInfo">This product is very fragile</td>
+                      <td class="cInvoice">434fyvh8765</td>
+                  </tr>
+                  <tr  data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">2</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">This is a priceless material</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr  data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">3</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">Serves you right</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr  data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">4</td>
+                      <td class="cName">Ella Hamilton</td>
+                      <td class="cTelephone">+(21) 89 809 874</td>
+                      <td class="cpLocation">Asia</td>
+                      <td class="cdLocation">Ghana</td>
+                      <td class="cOption">Immediate</td>
+                      <td class="cCategory">Agricultural produce</td>
+                      <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                      <td class="cAddInfo">This product is very fragile</td>
+                      <td class="cInvoice">434fyvh8765</td>
+                  </tr>
+                  <tr  data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">5</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">This is a priceless material</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr  data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">6</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">Serves you right</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">7</td>
+                      <td class="cName">Ella Hamilton</td>
+                      <td class="cTelephone">+(21) 89 809 874</td>
+                      <td class="cpLocation">Asia</td>
+                      <td class="cdLocation">Ghana</td>
+                      <td class="cOption">Immediate</td>
+                      <td class="cCategory">Agricultural produce</td>
+                      <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                      <td class="cAddInfo">This product is very fragile</td>
+                      <td class="cInvoice">434fyvh8765</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">8</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">This is a priceless material</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">9</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">Serves you right</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">10</td>
+                      <td class="cName">Ella Hamilton</td>
+                      <td class="cTelephone">+(21) 89 809 874</td>
+                      <td class="cpLocation">Asia</td>
+                      <td class="cdLocation">Ghana</td>
+                      <td class="cOption">Immediate</td>
+                      <td class="cCategory">Agricultural produce</td>
+                      <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                      <td class="cAddInfo">This product is very fragile</td>
+                      <td class="cInvoice">434fyvh8765</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">12</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">This is a priceless material</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">13</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">Serves you right</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">14</td>
+                      <td class="cName">Ella Hamilton</td>
+                      <td class="cTelephone">+(21) 89 809 874</td>
+                      <td class="cpLocation">Asia</td>
+                      <td class="cdLocation">Ghana</td>
+                      <td class="cOption">Immediate</td>
+                      <td class="cCategory">Agricultural produce</td>
+                      <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                      <td class="cAddInfo">This product is very fragile</td>
+                      <td class="cInvoice">434fyvh8765</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">15</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">This is a priceless material</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">16</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">Serves you right</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr data-toggle="modal" data-target="#courierModal">
+                      <td class="sN">17</td>
+                      <td class="cName">Ella Hamilton</td>
+                      <td class="cTelephone">+(21) 89 809 874</td>
+                      <td class="cpLocation">Asia</td>
+                      <td class="cdLocation">Ghana</td>
+                      <td class="cOption">Immediate</td>
+                      <td class="cCategory">Agricultural produce</td>
+                      <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                      <td class="cAddInfo">This product is very fragile</td>
+                      <td class="cInvoice">434fyvh8765</td>
+                  </tr>
+                  <tr>
+                      <td class="sN">18</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">This is a priceless material</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr>
+                      <td class="sN">19</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">Serves you right</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr>
+                      <td class="sN">20</td>
+                      <td class="cName">Ella Hamilton</td>
+                      <td class="cTelephone">+(21) 89 809 874</td>
+                      <td class="cpLocation">Asia</td>
+                      <td class="cdLocation">Ghana</td>
+                      <td class="cOption">Immediate</td>
+                      <td class="cCategory">Agricultural produce</td>
+                      <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                      <td class="cAddInfo">This product is very fragile</td>
+                      <td class="cInvoice">434fyvh8765</td>
+                  </tr>
+                  <tr>
+                      <td class="sN">21</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">This is a priceless material</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+                  <tr>
+                      <td class="sN">22</td>
+                      <td class="cName">Michelle Harry</td>
+                      <td class="cTelephone">+(09) 5674 763 323</td>
+                      <td class="cpLocation">Nigeria</td>
+                      <td class="cdLocation">Vietname</td>
+                      <td class="cOption">Next Day</td>
+                      <td class="cCategory">Clothers and Material</td>
+                      <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                      <td class="cAddInfo">Serves you right</td>
+                      <td class="cInvoice">tgid^76537</td>
+                  </tr>
+              </table>
+              <!-- This is the part for the courier order ends here -->
+
+
+              <!-- This is the part for the completed food order starts here -->
+              <table class="table completedfood">
+                <tr>
+                  <th>S/N</th>
+                  <th>Name</th>
+                  <th title="Phone Number">Telephone</th>
+                  <th>Location</th>
+                  <th>Date</th>
+                  <th>Item</th>
+                  <th>Price(<s>N</s>)</th>
+                  <th title="Quantity">QTY</th>
+                  <th title="Charges">Charge(<s>N</s>)</th>
+                  <th>Total(<s>N</s>)</th>
+                  <th>Invoice</th>
+                  <th>Billing</th>
+                </tr>
+                <tr data-toggle="modal" data-target="#foodModal">
+                  <td class="sN">1</td>
+                  <td class="name">Ikwegbu George</td>
+                  <td class="number">08101570258</td>
+                  <td class="location">Umuahia</td>
+                  <td class="date">3/1/2019</td>
+                  <td class="item">Rice,Beans, Oka</td>
+                  <td class="price">300,500,700</td>
+                  <td class="quantity">1 cup, 3plates, 1 basket</td>
+                  <td class="charge">20,30,40</td>
+                  <td class="total">20,000</td>
+                  <td class="cfInvoice">3432541Ae34</td>
+                  <td class="billing">Credit Card</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#foodModal">
+                    <td class="sN">2</td>
+                    <td class="name">Justin Bieber</td>
+                    <td class="number">+(98)1570258</td>
+                    <td class="location">Las Vegas</td>
+                    <td class="date">4/2/2019</td>
+                    <td class="item">Pizza,Hotdog</td>
+                    <td class="price">300,500</td>
+                    <td class="quantity">1 cup, 1 basket</td>
+                    <td class="charge">20,40</td>
+                    <td class="total">40,000</td>
+                    <td class="cfInvoice">45872Ytgf6</td>
+                    <td class="billing">Credit Card</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#foodModal">
+                    <td class="sN">3</td>
+                    <td class="name">Justin Bieber</td>
+                    <td class="number">+(98)1570258</td>
+                    <td class="location">Las Vegas</td>
+                    <td class="date">4/2/2019</td>
+                    <td class="item">Pizza,Hotdog</td>
+                    <td class="price">300,500</td>
+                    <td class="quantity">1 cup, 1 basket</td>
+                    <td class="charge">20,40</td>
+                    <td class="total">40,000</td>
+                    <td class="cfInvoice">45872Ytgf6</td>
+                    <td class="billing">Credit Card</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#foodModal">
+                  <td class="sN">4</td>
+                  <td class="name">Ikwegbu George</td>
+                  <td class="number">08101570258</td>
+                  <td class="location">Umuahia</td>
+                  <td class="date">3/1/2019</td>
+                  <td class="item">Rice,Beans, Oka</td>
+                  <td class="price">300,500,700</td>
+                  <td class="quantity">1 cup, 3plates, 1 basket</td>
+                  <td class="charge">20,30,40</td>
+                  <td class="total">20,000</td>
+                  <td class="cfInvoice">npower</td>
+                  <td class="billing">Credit Card</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#foodModal">
+                    <td class="sN">5</td>
+                    <td class="name">Justin Bieber</td>
+                    <td class="number">+(98)1570258</td>
+                    <td class="location">Las Vegas</td>
+                    <td class="date">4/2/2019</td>
+                    <td class="item">Pizza,Hotdog</td>
+                    <td class="price">300,500</td>
+                    <td class="quantity">1 cup, 1 basket</td>
+                    <td class="charge">20,40</td>
+                    <td class="total">40,000</td>
+                    <td class="cfInvoice">veaq4qq3</td>
+                    <td class="billing">Credit Card</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#foodModal">
+                    <td class="sN">6</td>
+                    <td class="name">Justin Bieber</td>
+                    <td class="number">+(98)1570258</td>
+                    <td class="location">Las Vegas</td>
+                    <td class="date">4/2/2019</td>
+                    <td class="item">Pizza,Hotdog</td>
+                    <td class="price">300,500</td>
+                    <td class="quantity">1 cup, 1 basket</td>
+                    <td class="charge">20,40</td>
+                    <td class="total">40,000</td>
+                    <td class="cfInvoice">45872Ytgf6</td>
+                    <td class="billing">Credit Card</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#foodModal">
+                  <td class="sN">7</td>
+                  <td class="name">Ikwegbu George</td>
+                  <td class="number">08101570258</td>
+                  <td class="location">Umuahia</td>
+                  <td class="date">3/1/2019</td>
+                  <td class="item">Rice,Beans, Oka</td>
+                  <td class="price">300,500,700</td>
+                  <td class="quantity">1 cup, 3plates, 1 basket</td>
+                  <td class="charge">20,30,40</td>
+                  <td class="total">20,000</td>
+                  <td class="cfInvoice">Aeadcaeq</td>
+                  <td class="billing">Credit Card</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#foodModal">
+                    <td class="sN">8</td>
+                    <td class="name">Justin Bieber</td>
+                    <td class="number">+(98)1570258</td>
+                    <td class="location">Las Vegas</td>
+                    <td class="date">4/2/2019</td>
+                    <td class="item">Pizza,Hotdog</td>
+                    <td class="price">300,500</td>
+                    <td class="quantity">1 cup, 1 basket</td>
+                    <td class="charge">20,40</td>
+                    <td class="total">40,000</td>
+                    <td class="cfInvoice">azvzbeawe</td>
+                    <td class="billing">Credit Card</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#foodModal">
+                    <td class="sN">9</td>
+                    <td class="name">Justin Bieber</td>
+                    <td class="number">+(98)1570258</td>
+                    <td class="location">Las Vegas</td>
+                    <td class="date">4/2/2019</td>
+                    <td class="item">Pizza,Hotdog</td>
+                    <td class="price">300,500</td>
+                    <td class="quantity">1 cup, 1 basket</td>
+                    <td class="charge">20,40</td>
+                    <td class="total">40,000</td>
+                    <td class="cfInvoice">5rtadfafe</td>
+                    <td class="billing">Credit Card</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#foodModal">
+                  <td class="sN">10</td>
+                  <td class="name">Ikwegbu George</td>
+                  <td class="number">08101570258</td>
+                  <td class="location">Umuahia</td>
+                  <td class="date">3/1/2019</td>
+                  <td class="item">Rice,Beans, Oka</td>
+                  <td class="price">300,500,700</td>
+                  <td class="quantity">1 cup, 3plates, 1 basket</td>
+                  <td class="charge">20,30,40</td>
+                  <td class="total">20,000</td>
+                  <td class="cfInvoice">vcadefre</td>
+                  <td class="billing">Credit Card</td>
+                </tr>
+                <tr>
+                    <td class="sN">11</td>
+                    <td class="name">Justin Bieber</td>
+                    <td class="number">+(98)1570258</td>
+                    <td class="location">Las Vegas</td>
+                    <td class="date">4/2/2019</td>
+                    <td class="item">Pizza,Hotdog</td>
+                    <td class="price">300,500</td>
+                    <td class="quantity">1 cup, 1 basket</td>
+                    <td class="charge">20,40</td>
+                    <td class="total">40,000</td>
+                    <td class="cfInvoice">..6r3sdvae</td>
+                    <td class="billing">Credit Card</td>
+                </tr>
+                <tr>
+                    <td class="sN">12</td>
+                    <td class="name">Justin Bieber</td>
+                    <td class="number">+(98)1570258</td>
+                    <td class="location">Las Vegas</td>
+                    <td class="date">4/2/2019</td>
+                    <td class="item">Pizza,Hotdog</td>
+                    <td class="price">300,500</td>
+                    <td class="quantity">1 cup, 1 basket</td>
+                    <td class="charge">20,40</td>
+                    <td class="total">40,000</td>
+                    <td class="cfInvoice">xerdwadfe</td>
+                    <td class="billing">Credit Card</td>
+                </tr>
+              </table>
+              <!-- This is the part for the food order ends here -->
+
+              <!-- This part is for the courier order starts here -->
+              <table class="completedcourier table">
+
+                <tr>
+                    <th>S/N</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Pick up Location</th>
+                    <th>Delivery Location</th>
+                    <th>Delivery Option</th>
+                    <th>Product Cat</th>
+                    <th>Image</th>
+                    <th>Add Info</th>
+                    <th>Invoice</th>
+                </tr>
+                <tr  data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">1</td>
+                    <td class="cName">Ella Hamilton</td>
+                    <td class="cTelephone">+(21) 89 809 874</td>
+                    <td class="cpLocation">Asia</td>
+                    <td class="cdLocation">Ghana</td>
+                    <td class="cOption">Immediate</td>
+                    <td class="cCategory">Agricultural produce</td>
+                    <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                    <td class="cAddInfo">This product is very fragile</td>
+                    <td class="ccInvoice">434fyvh8765</td>
+                </tr>
+                <tr  data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">2</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">This is a priceless material</td>
+                    <td class="ccInvoice">tgid^76537</td>
+                </tr>
+                <tr  data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">3</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">Serves you right</td>
+                    <td class="ccInvoice">tgid^76537</td>
+                </tr>
+                <tr  data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">4</td>
+                    <td class="cName">Ella Hamilton</td>
+                    <td class="cTelephone">+(21) 89 809 874</td>
+                    <td class="cpLocation">Asia</td>
+                    <td class="cdLocation">Ghana</td>
+                    <td class="cOption">Immediate</td>
+                    <td class="cCategory">Agricultural produce</td>
+                    <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                    <td class="cAddInfo">This product is very fragile</td>
+                    <td class="ccInvoice">434fyvh8765</td>
+                </tr>
+                <tr  data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">5</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">This is a priceless material</td>
+                    <td class="ccInvoice">tgid^76537</td>
+                </tr>
+                <tr  data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">6</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">Serves you right</td>
+                    <td class="ccInvoice">tgid^76537</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">7</td>
+                    <td class="cName">Ella Hamilton</td>
+                    <td class="cTelephone">+(21) 89 809 874</td>
+                    <td class="cpLocation">Asia</td>
+                    <td class="cdLocation">Ghana</td>
+                    <td class="cOption">Immediate</td>
+                    <td class="cCategory">Agricultural produce</td>
+                    <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                    <td class="cAddInfo">This product is very fragile</td>
+                    <td class="ccInvoice">434fyvh8765</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">8</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">This is a priceless material</td>
+                    <td class="ccInvoice">tgid^76537</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">9</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">Serves you right</td>
+                    <td class="ccInvoice">tgid^76537</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">10</td>
+                    <td class="cName">Ella Hamilton</td>
+                    <td class="cTelephone">+(21) 89 809 874</td>
+                    <td class="cpLocation">Asia</td>
+                    <td class="cdLocation">Ghana</td>
+                    <td class="cOption">Immediate</td>
+                    <td class="cCategory">Agricultural produce</td>
+                    <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                    <td class="cAddInfo">This product is very fragile</td>
+                    <td class="cInvoice">434fyvh8765</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">12</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">This is a priceless material</td>
+                    <td class="cInvoice">tgid^76537</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">13</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">Serves you right</td>
+                    <td class="cInvoice">tgid^76537</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">14</td>
+                    <td class="cName">Ella Hamilton</td>
+                    <td class="cTelephone">+(21) 89 809 874</td>
+                    <td class="cpLocation">Asia</td>
+                    <td class="cdLocation">Ghana</td>
+                    <td class="cOption">Immediate</td>
+                    <td class="cCategory">Agricultural produce</td>
+                    <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                    <td class="cAddInfo">This product is very fragile</td>
+                    <td class="cInvoice">434fyvh8765</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">15</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">This is a priceless material</td>
+                    <td class="cInvoice">tgid^76537</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">16</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">Serves you right</td>
+                    <td class="cInvoice">tgid^76537</td>
+                </tr>
+                <tr data-toggle="modal" data-target="#courierModal">
+                    <td class="sN">17</td>
+                    <td class="cName">Ella Hamilton</td>
+                    <td class="cTelephone">+(21) 89 809 874</td>
+                    <td class="cpLocation">Asia</td>
+                    <td class="cdLocation">Ghana</td>
+                    <td class="cOption">Immediate</td>
+                    <td class="cCategory">Agricultural produce</td>
+                    <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                    <td class="cAddInfo">This product is very fragile</td>
+                    <td class="cInvoice">434fyvh8765</td>
+                </tr>
+                <tr>
+                    <td class="sN">18</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">This is a priceless material</td>
+                    <td class="cInvoice">tgid^76537</td>
+                </tr>
+                <tr>
+                    <td class="sN">19</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">Serves you right</td>
+                    <td class="cInvoice">tgid^76537</td>
+                </tr>
+                <tr>
+                    <td class="sN">20</td>
+                    <td class="cName">Ella Hamilton</td>
+                    <td class="cTelephone">+(21) 89 809 874</td>
+                    <td class="cpLocation">Asia</td>
+                    <td class="cdLocation">Ghana</td>
+                    <td class="cOption">Immediate</td>
+                    <td class="cCategory">Agricultural produce</td>
+                    <td class="cImagery"><img src="../img/admin/potrait.jpg" alt="This will be the additional info provided"> </td>
+                    <td class="cAddInfo">This product is very fragile</td>
+                    <td class="cInvoice">434fyvh8765</td>
+                </tr>
+                <tr>
+                    <td class="sN">21</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">This is a priceless material</td>
+                    <td class="cInvoice">tgid^76537</td>
+                </tr>
+                <tr>
+                    <td class="sN">22</td>
+                    <td class="cName">Michelle Harry</td>
+                    <td class="cTelephone">+(09) 5674 763 323</td>
+                    <td class="cpLocation">Nigeria</td>
+                    <td class="cdLocation">Vietname</td>
+                    <td class="cOption">Next Day</td>
+                    <td class="cCategory">Clothers and Material</td>
+                    <td class="cImagery"><img src="../img/Testimony/Client.jpg" alt=""> </td>
+                    <td class="cAddInfo">Serves you right</td>
+                    <td class="cInvoice">tgid^76537</td>
+                </tr>
+            </table>
+            <!-- This is the part for the completed courier order ends here -->
+
+              </div>
+            </div>
+          </div>
+
+          <!-- This is the start for footer section -->
+          <!-- <div class="footer navbar-fixed-bottom"> -->
+          <div class="footer navbar-fixed-bottom">
+        <!-- <div class="footer"> -->
+            <p>&copy George Delivery Service 2019-<b id="date">2019</b>. All Rights Reserved</p>
+          </div>
+          <!-- This is the end for footer section -->
+        </div>
+        <!-- This is the section for the maincontent ends here -->
+
+
+      </div>
+      <!-- This is the end for the CONTENT section -->
+
+      <!-- Trigger the modal with a button -->
+      <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#foodModal">Open Modal</button> -->
+
+      <!-- Modal -->
+      <div id="foodModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Order Details:</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-responsive">
+                <form class="form" action="" method="post">
+                  <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control Name" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Telephone">Telephone</label>
+                    <input type="text" class="form-control Telephone" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Location">Location</label>
+                    <input type="text" class="form-control Location" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Date">Date</label>
+                    <input type="text" class="form-control Date" readonly name="" value="">
+                  </div>
+
+
+
+
+                  <!-- ==============Try and write a for loop to pick the items and store it in a ul li for readablity purpose================= -->
+
+                  <div class="col-sm-3 well">
+                    <div class="form-group">
+                      <label for="Item">Item</label>
+                      <input type="text" class="form-control Item" readonly name="" value="">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 well">
+                    <div class="form-group">
+                      <label for="Price">Price (<s>N</s>)</label>
+                      <input type="text" class="form-control Price" readonly name="" value="">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 well">
+                    <div class="form-group">
+                      <label for="Quantity">Quantity</label>
+                      <input type="text" class="form-control Quantity" readonly name="" value="">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 well">
+                    <div class="form-group">
+                      <label for="Charge">Charge (<s>N</s>)</label>
+                      <input type="text" class="form-control Charge" readonly name="" value="">
+                    </div>
+                  </div>
+
+                  <!-- ========================================= -->
+                  <div class="form-group">
+                    <label for="Total">Total (<s>N</s>)</label>
+                    <input type="text" class="form-control Total" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Invoice">Invoice</label>
+                    <input type="text" class="form-control Invoice" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Billing">Billing</label>
+                    <input type="text" class="form-control Billing" readonly name="" value="">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" onclick="window.print()" data-dismiss="modal">Accept</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Decline</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="courierModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Order Details:</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-responsive">
+                <form class="form" action="" method="post">
+                  <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control cName" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Telephone">Telephone</label>
+                    <input type="text" class="form-control cTelephone" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Pick-up Location">Pick-up Location</label>
+                    <input type="text" class="form-control cpLocation" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Delivery Location">Delivery Location</label>
+                    <input type="text" class="form-control cdLocation" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Delivery Option">Delivery Option</label>
+                    <input type="text" class="form-control cOption" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Product Category">Product Category</label>
+                    <input type="text" class="form-control cCategory" readonly name="" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Image">Image</label>
+                    <img src="" class="thumbnail cImagery" alt="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Additional Information">Additional Information</label>
+                    <textarea name="name"class="form-control cInfo" readonly rows="4" cols="80"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="Invoice">Invoice</label>
+                    <input type="text" class="form-control cInvoice" readonly name="" value="">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" onclick="window.print()" data-dismiss="modal">Accept</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Decline</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery-1.10.2.min.js"charset="utf-8"></script>
+  <script src="../js/wow.min.js"charset="utf-8"></script>
+  <script src="../js/ajax.js"charset="utf-8"></script>
+  <script src="../js/George.js"charset="utf-8"></script>
+  <script>
+    new WOW().init();
+  </script>
+</html>

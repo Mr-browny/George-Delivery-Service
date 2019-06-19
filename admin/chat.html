@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ikwegbu George Chinedu Iheanyichukwu">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <meta name="description" content="PngGet stands for Portable Network Graphics Get, where PNG images can be downloaded by users for easy integration into their work. This has so many categories, ranging from nature, food, meal, cars, aeroplanes, ships, keke, houses, buildings, electronics, cloths, etc.">
+    <meta name="keywords" content="We provide images without backgrounds so as to help users who doesn\'t know how remove image backgrounds with any Graphics software. This has so many categories, ranging from nature, food, meal, cars, aeroplanes, ships, keke, houses, buildings, electronics, cloths, etc.">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../img/favicon.jpg" size="16*16" type="image/png">
+    <title>George Delivery Service -Chat Room</title>
+  </head>
+  <body>
+
+
+
+    <!-- This is for the horizontal navigation bar starts here -->
+    <nav class="nav-bar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-camera"></span> GDS- Administrator</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#georgeNavbar">
+             <i class="fa fa-2x fa-angle-double-down wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-iteration="infinite"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="georgeNavbar">
+          <ul class="nav navbar-nav navbar-left hidden-lg">
+            <li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+            <li><a href="uploads.html"><span class="glyphicon glyphicon-picture"></span> Registeration</a></li>
+            <li><a href="order.html"><span class="fa fa-shopping-bag"></span> Order Menu</a></li>
+            <li><a href="email.html"><span class="glyphicon glyphicon-envelope"></span> Email</a></li>
+            <li class="active"><a href="chat.html"><span class="fa fa-comment"></span> Chat</a></li>
+            <li><a href="addadmin.html"><span class="fa fa-user-plus"></span> Add Co-Administrator</a></li>
+            <li><a href="edit.html"><span class="glyphicon glyphicon-cog"></span> Edit Profile</a></li>
+            <li><a href="../_inc/logout.php"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:;"><img src="../img/user.png" alt="">  George </a></li>
+            <li> <a href="javascript:;"></a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- This is for the horizontal navigation bar ends here -->
+
+    <div class="container-fluid">
+      <!-- This is the start of CONTENT section -->
+      <div class="CONTENT">
+        <!-- This is for the vertical navigation bar starts here -->
+        <div class="sideNav hidden-xs">
+          <ul>
+            <li><span class="glyphicon glyphicon-dashboard wow bounce" data-wow-iteration="infinite"></span><a href="index.html">  Dashboard</a></li>
+            <li><span class="glyphicon glyphicon-picture wow tada" data-wow-iteration="infinite"></span><a href="uploads.html">  Registeration</a></li>
+            <li><span class="fa fa-shopping-bag wow shake" data-wow-iteration="infinite"></span> <a href="order.html"> Order Menu</a></li>
+            <li><span class="glyphicon glyphicon-envelope wow flipInX" data-wow-iteration="infinite"></span><a href="email.html">  Email <b>5</b></a></li>
+            <li class="active"><span class="fa fa-comment hactive" data-wow-iteration="infinite"></span><a href="chat.html">  Chat <b>20</b></a></li>
+            <li><span class="fa fa-user-plus"></span> <a href="addAdmin.html">Add Co-Admin</a></li>
+            <li><span class="glyphicon glyphicon-cog wow rotateIn" data-wow-iteration="infinite"></span><a href="edit.html">  Edit Profile</a></li>
+            <li><span class="glyphicon glyphicon-off wow pulse" data-wow-iteration="infinite"></span> <a href="../_inc/logout.php"> Logout</a></li>
+            <!-- <li><a href="#"></a></li>
+            <li><a href="#"></a></li> -->
+          </ul>
+        </div>
+        <!-- This is for the vertical navigation bar ends here -->
+
+        <!-- This is the section for the maincontent starts here -->
+        <div class="mainContent">
+          <div class="dashboard">
+            <div class="dashboard-header">
+              <h2>Chat Room</h2>
+              <p>
+                <b>Home</b> <span class="fa fa-caret-right"></span>
+                <i>Chat Room</i>
+              </p>
+            </div>
+            <div class="chat-room">
+              <!-- This is the section for chat contacts starts here-->
+              <div class="col-sm-3 contact">
+                <div class="contact-header">
+                  <h2>Users</h2>
+                </div>
+                <div class="tab">
+                  <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li role="presentation" class="active admin"><a href="#Admin" aria-controls="Admin" role="tab" data-toggle="tab"><span class="fa fa-user-secret"></span> Admin</a></li>
+                    <li role="presentation" class="coadmin"><a href="#Co-admin" aria-controls="Co-Admin" role="tab" data-toggle="tab"><span class="fa fa-user"></span> C-Admin</a></li>
+                    <li role="presentation" class="group"><a href="#Group" aria-controls="Group" role="tab" data-toggle="tab"><span class="fa fa-users"></span> Groups</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <!-- This is a section for the main admin starts here -->
+                    <div class="tab-pane fade in active" id="Admin" role="tabpanel">
+                      <ul>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Emma Javatek</h3>
+                            <p class="admin-short-msg">Hi fellas, we have a meeting by 12:00pm today.</p>
+                            <i class="admin-msg-time">6:30am</i>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Favour Ojiakor</h3>
+                            <p class="admin-short-msg">I will be there by 10pm.</p>
+                            <i class="admin-msg-time">8:30am</i>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Tiger</h3>
+                            <p class="admin-short-msg">Wetin dey happen???</p>
+                            <i class="admin-msg-time">10:30am</i>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Ikwegbu George</h3>
+                            <p class="admin-short-msg">I will try and make it, wait, online or offline??</p>
+                            <i class="admin-msg-time">11:30am</i>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- This is a section for the main admin ends here -->
+
+                    <!-- This is a section for the co admins starts here -->
+                    <div class="tab-pane fade in" id="Co-admin" role="tabpanel">
+                      <ul>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Chinedu George</h3>
+                            <p class="admin-short-msg">Approved 400 uploads today, am za bozz!</p>
+                            <i class="admin-msg-time">6:30am</i>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Kamila Jay</h3>
+                            <p class="admin-short-msg">I need foooood!!!!!!!</p>
+                            <i class="admin-msg-time">8:30am</i>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Jake Thompson</h3>
+                            <p class="admin-short-msg">What a Day!!</p>
+                            <i class="admin-msg-time">10:30am</i>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Henry Smart</h3>
+                            <p class="admin-short-msg">Really hungry, who has extra snacks here?</p>
+                            <i class="admin-msg-time">11:30am</i>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Cassidy Nathaniel</h3>
+                            <p class="admin-short-msg">Low on cash, mehn!. I need credit alert o.</p>
+                            <i class="admin-msg-time">6:30am</i>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Kamsy Presh</h3>
+                            <p class="admin-short-msg">Is ASUU still on strike??</p>
+                            <i class="admin-msg-time">8:30am</i>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Matilda Nelson</h3>
+                            <p class="admin-short-msg">Who's voting on 23rd??</p>
+                            <i class="admin-msg-time">10:30am</i>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="../img/user.png" alt="">
+                          <div class="admin-content">
+                            <h3 class="admin-name">Chucks Ken</h3>
+                            <p class="admin-short-msg">Need for speed uploading!!!</p>
+                            <i class="admin-msg-time">11:30am</i>
+                          </div>
+                        </li>
+                      <br><br>
+                      </ul>
+                    </div>
+                    <!-- This is a section for the co admins ends here -->
+
+                    <!-- This is a section for the groups starts here -->
+                    <div class="tab-pane fade in" id="Group" role="tabpanel">
+                      <div class="adminGroup">
+                        <h4>The Administrators</h4>
+                        <span class="fa fa-user-secret"></span>
+                        <p class="adminNumber">4</p>
+                      </div>
+                      <div class="coAdminGroup">
+                        <h4>The Co-Administrators</h4>
+                        <span class="fa fa-users"></span>
+                        <p class="codminNumber">400</p>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- This is a section for the groups ends here -->
+                </div>
+              </div>
+              <!-- This is the section for chat contacts ends here-->
+
+              <!-- This is the section for the chat content starts here -->
+              <div class="col-sm-9 content">
+                <div class="single-chat">
+                  <div class="single-chat-header">
+                    <img src="" alt="" class="user-gravatar">
+                    <h3 class="user-name">Ikwegbu George</h3>
+                  </div>
+                  <div class="single-chat-content">
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="replyForm">
+                    <form class="form-responsive" action="" method="post">
+                      <div class="form-group">
+                        <textarea name="name" class="form-control" required rows="1" placeholder="type..." cols="80"></textarea>
+                        <br>
+                        <input type="submit" class="form-control btn btn-success" name="" value="Reply">
+                      </div>
+                    </form>
+                    <br><br>
+                  </div>
+                </div>
+                <div class="group-chat">
+                  <div class="single-chat-header">
+                    <img src="" alt="" class="user-gravatar">
+                    <h3 class="group-name">Administrators</h3>
+                  </div>
+                  <div class="group-chat-content">
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                    <div class="received-chat">
+                      <img src="../img/user.png" alt="" class="user-gravatar">
+                      <div class="received-chat-content">
+                        <article class="received-chat-msg">
+                          Hello, how are you?Hello, how are you?Hello, how are you?Hello,
+                          how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?Hello,
+                           how are you?Hello, how are you?Hello, how are you?
+                        </article>
+                        <i class="received-chat-time">6:45am</i>
+                      </div>
+                    </div>
+                    <div class="sent-chat">
+                      <img src="../img/user.png" alt="" class="my-gravatar">
+                      <div class="sent-chat-content">
+                        <article class="sent-chat-msg">
+                          Hello, am doing just fine. How was your night?
+                        </article>
+                        <i class="sent-chat-time">6:50am</i>
+                      </div>
+                    </div>
+                  </div><br>
+                  <div class="replyForm">
+                    <form class="form-responsive" action="" method="post">
+                      <div class="form-group">
+                        <textarea name="name" class="form-control" required rows="1" placeholder="type..." cols="80"></textarea>
+                        <br>
+                        <input type="submit" class="form-control btn btn-success" name="" value="Reply">
+                      </div>
+                    </form>
+                    <br><br>
+                  </div>
+                </div>
+              </div>
+              <!-- This is the section for the chat content ends here -->
+            </div>
+          </div>
+
+          <!-- This is the start for footer section -->
+          <!-- <div class="footer navbar-fixed-bottom"> -->
+          <div class="footer navbar-fixed-bottom">
+        <!-- <div class="footer"> -->
+            <p>&copy George Delivery Service 2019-<b id="date">2019</b>. All Rights Reserved</p>
+          </div>
+          <!-- This is the end for footer section -->
+        </div>
+        <!-- This is the section for the maincontent ends here -->
+
+
+      </div>
+      <!-- This is the end for the CONTENT section -->
+
+
+
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery-1.10.2.min.js"charset="utf-8"></script>
+  <script src="../js/wow.min.js"charset="utf-8"></script>
+  <script src="../js/ajax.js"charset="utf-8"></script>
+  <script src="../js/George.js"charset="utf-8"></script>
+  <script>
+    new WOW().init();
+  </script>
+</html>

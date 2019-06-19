@@ -1,0 +1,1427 @@
+*{
+  font-family: serif;
+}
+
+/* This section is for the slider starts here */
+.item .item-1,
+.item .item-2,
+.item .item-3,
+.item .item-4{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 633px;
+}
+.item .item-1{
+  background-image: url(../img/slide/slide.jpg);
+}
+.item .item-2{
+  background-image: url(../img/slide/slide1.jpg);
+}
+.item .item-3{
+  background-image: url(../img/slide/slide2.jpg);
+}
+.item .item-4{
+  background-image: url(../img/slide/slide3.jpg);
+}
+.item .slide-icon{
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.item .slide-content{
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+  margin: 90px auto;
+
+}
+.item .slide-content h2{
+  color: #f2a924;
+  font-size: 40px;
+}
+.item .slide-content p{
+  color: white;
+  font-size: 18px;
+}
+.item .slide-content i{
+  color: aqua;
+}
+/* This section is for the slider ends here */
+
+/* This section is for the navigation starts here */
+
+nav.navbar .container-fluid{
+  background-color: white;
+  box-shadow: 10px 10px 20px black;
+  z-index: 50!important;
+  /* color: #ff9800 !important; */
+  /* border: 10px solid blue; */
+}
+nav.navbar .container-fluid .navbar-header img{
+  width: 150px;
+  height: 50px;
+}
+nav.navbar .container-fluid .navbar-header button{
+  margin-top: 20px;
+}
+nav.navbar .container-fluid .navbar-header button:hover{
+  background-color: #2b7386;
+}
+nav.navbar .container-fluid .collapse ul{
+  margin-top: 20px;
+}
+nav.navbar .container-fluid .collapse ul li.active a{
+  color: gold!important;
+  border-radius: 10px;
+  background-color: #2b7386;
+}
+nav.navbar .container-fluid .collapse ul li a{
+  color: #2b7386;
+  transition: 0.1s all ease-in;
+}
+nav.navbar .container-fluid .collapse ul li a:hover{
+  background-color: #2b7386;
+  color: gold;
+  border-radius: 10px;
+  transition: 0.3s all ease-in;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul.dropdown-menu span.fa{
+  float: right;
+  color: #ff9800;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul.dropdown-menu li ul.dropdown-menu1#ul{
+  list-style: none;
+  display: none;
+  background-color: white;
+  border: 1px #2b7683 solid;
+  border-radius: 10px;
+  overflow: auto;
+  margin-left: 2px;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul.dropdown-menu li ul.dropdown-menu1#ul li{
+  display: block;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul.dropdown-menu li ul.dropdown-menu1#ul li a{
+  display: block;
+  padding: 0.2em;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: -30px;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul.dropdown-menu li:hover > ul.dropdown-menu1#ul{
+  display: block;
+  position: absolute;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul.dropdown-menu li:hover li{
+  float: none;
+}
+nav.navbar .container-fluid .collapse ul ul ul{
+  left: 100%;
+  top: 0;
+}
+nav.navbar .container-fluid .collapse ul li ul li{
+  border-top: 0;
+}
+nav.navbar .container-fluid .collapse ul::before,
+nav.navbar .container-fluid .collapse ul::after{
+  content: ' ';
+  display: table;
+}
+/* nav.navbar .container-fluid .collapse ul li.dropdown ul.dropdown-menu li ul.dropdown-menu1#ul li{
+  display: block;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul.dropdown-menu li ul.dropdown-menu1#ul li a{
+  display: block;
+  white-space: nowrap;
+  padding: 0.5em;
+  text-decoration: none;
+  margin-left: -30px;
+} */
+nav.navbar .container-fluid .collapse ul li a sup{
+  background-color: #ff9800;
+  padding: 5px;
+  border-radius: 50%;
+}
+nav.navbar .container-fluid .collapse ul li a img{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-top: -10px;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul.user{
+  background-color: #2b7683;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul .user img{
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul .user h4{
+  color: #ff9800;
+}
+nav.navbar .container-fluid .collapse ul li.dropdown ul .user a button{
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 20px;
+  background-color: #ff9800;
+  margin-top: 20px;
+  color: white;
+}
+
+/* This section is for the navigation ends here */
+
+/* This is the section for services starts here */
+.service{
+  margin-top: 40px;
+}
+.service .service-header{
+  text-align: center;
+}
+.service .service-header h2{
+  color: #ff9800;
+}
+.service .service-column .service-col{
+  width: 30%;
+  float: left;
+  margin-top: 60px;
+  margin-left: 30px;
+
+}
+.service .service-column .service-col .service-icon{
+  font-size: 40px;
+  margin-left: -30px;
+}
+.service .service-column .service-col .service-content{
+  margin-top: -50px;
+  padding-left: 20px;
+}
+.tant{
+  clear: both;
+}
+
+.fa.fa-laptop{
+  color: brown;
+}
+.fa.fa-home{
+  color: blue;
+}
+.fa.fa-graduation-cap{
+  color: black;
+}
+.fa.fa-automobile{
+  color: green;
+}
+.glyphicon.glyphicon-gift{
+  color: orange;
+}
+.fa.fa-headphones{
+  color: red;
+}
+/* This is the section for services ends here */
+
+/* This section is for the courier service starts here */
+.courier{
+  clear: both;
+  margin-top: 50px;
+  margin-bottom: 30px;
+background-color: #efefef;
+padding: 20px;
+}
+.courier .courier-header{
+  text-align: center;
+}
+.courier .courier-header h2{
+  color: #ff9800;
+  text-transform: uppercase;
+}
+.courier .courier-column{
+
+}
+.courier .courier-column .courier-col{
+  width: 50%;
+  float: left;
+}
+.courier .courier-column .courier-col .courier-categories{
+  margin-top: 80px;
+}
+.courier .courier-column .courier-col .courier-categories h4{
+  color: #ff9800;
+}
+.courier .courier-column .courier-col .courier-categories ul{
+  list-style: circle;
+}
+.courier .courier-column .courier-col .courier-categories ul li{
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.courier .courier-column .courier-col-big{
+  clear: both;
+  width: 100%;
+}
+
+/* ============================Start of courier page======================== */
+/* ============================================================================= */
+#loading {
+    background-color: #2b7386;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+}
+
+#loading-center {
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 20px;
+    width: 100px;
+    margin-top: -10px;
+    margin-left: -50px;
+
+}
+
+#loading-center-absolute img {
+    width: 100%;
+    height: 100px;
+}
+
+.object {
+    width: 8px;
+    height: 6px;
+    background-color: #ff9800;
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+    border: 1px dashed white;
+    -webkit-border: 1px dashed white;
+    -moz-border: 1px dashed white;
+    -o-border: 1px dashed white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+#road {
+    border: 3px dashed black;
+    -moz-border: 3px dashed black;
+    -webkit-border: 3px dashed black;
+    -o-border: 3px dashed black;
+    width: 200%;
+    position: absolute;
+    top: 150px;
+    right: -200px;
+    animation: move 2s linear infinite;
+    -webkit-animation: move 2s linear infinite;
+    -moz-animation: move 2s linear infinite;
+    -o-animation: move 2s linear infinite;
+
+}
+
+#object_one {
+    -webkit-animation: object 2s linear infinite;
+    animation: object 2s linear infinite;
+}
+
+#object_two {
+    -webkit-animation: object 2s linear infinite -.4s;
+    animation: object 2s linear infinite -.4s;
+}
+
+#object_three {
+    -webkit-animation: object 2s linear infinite -.8s;
+    animation: object 2s linear infinite -.8s;
+}
+
+#object_four {
+    -webkit-animation: object 2s linear infinite -1.2s;
+    animation: object 2s linear infinite -1.2s;
+}
+
+#object_five {
+    -webkit-animation: object 2s linear infinite -1.6s;
+    animation: object 2s linear infinite -1.6s;
+}
+
+@-webkit-keyframes object {
+    0% {
+        left: 100px;
+        top: 0;
+    }
+    80% {
+        left: 0;
+        top: 0;
+    }
+    85% {
+        left: 0;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    90% {
+        width: 40px;
+        height: 15px;
+    }
+    95% {
+        left: 100px;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        left: 100px;
+        top: 0;
+    }
+
+}
+
+@keyframes object {
+    0% {
+        left: 100px;
+        top: 0
+    }
+    80% {
+        left: 0;
+        top: 0;
+    }
+    85% {
+        left: 0;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    90% {
+        width: 40px;
+        height: 15px;
+    }
+    95% {
+        left: 100px;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        left: 100px;
+        top: 0;
+    }
+}
+
+#content_page {
+    position: relative;
+    -webkit-animation-name: animatecontent;
+    animation-name: animatecontent;
+    animation-duration: 3s;
+}
+
+@keyframes animatecontent {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes animatecontent {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+.courier-platform{
+  margin-top: 50px;
+  text-align: center;
+}
+.courier-platform .courier-platform-header h2{
+  color: #ff9800;
+}
+.agent{
+  background-color: #efefef;
+  margin-bottom: 20px;
+}
+.agent-col{
+  width: 48%;
+  margin: 1%;
+  float: left;
+}
+.agent-col .agent-header{
+  text-align: center;
+  margin-top: 100px;
+}
+.agent-col.img{
+  background-image: url(../img/agent.jpg);
+  background-position:center;
+  background-size: cover;
+  background-blend-mode: color;
+  height: 500px;
+  border-radius: 20px;
+  transition: 0.2s all ease-in;
+}
+.agent-col.img h3,
+.agent-col.img p{
+  background-color: #ff9800;
+  padding: 1em;
+  text-align: center;
+  display: none;
+  transition: 0.2s all ease-in;
+}
+.agent-col.img p{
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+.agent-col.img:hover{
+  background-color: rgba(0,0,0,0.4);
+  transition: 0.2s all ease-in;
+}
+.agent-col.img:hover h3,
+.agent-col.img:hover p{
+  display: block;
+  transition: 0.3s all ease-in;
+}
+.delivery{
+  padding-top: 50px;
+}
+.delivery .delivery-header{
+  text-align: center;
+}
+.delivery .delivery-header h2{
+  color: #ff9800;
+}
+.delivery .delivery-content{
+  margin-left: 20px;
+}
+.delivery .delivery-content .delivery-col{
+  width: 30%;
+  float: left;
+  padding: 20px;
+  margin-left: 1%;
+}
+.delivery .delivery-content .delivery-col span{
+  margin-left: -40px;
+  font-size: 20px;
+}
+.fa.fa-smile-o{
+  color: blue;
+}
+.fa.fa-spinner{
+  color: green;
+}
+.fa.fa-street-view{
+  color: black;
+}
+.delivery .delivery-content .delivery-col section{
+  margin-top: -30px;
+}
+.delivery .delivery-content .delivery-col section h3{
+  color: #ff9800;
+}
+.quote{
+  background-color: #efefef;
+  margin-top: 50px;
+}
+.quote .quote-header{
+  text-align: center;
+}
+.quote .quote-header h2{
+  color: #ff9800;
+}
+.quote .quote-header p b{
+  color: red;
+}
+.quote .quote-content{
+
+}
+.quote .quote-content form .form-col{
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.quote .quote-content form .form-col .image-upload{
+  border: 2px solid black;
+  border-style: inset;
+  border-radius: 20px;
+  width: 300px;
+  height: 250px;
+}
+.quote .quote-content form .form-col .image-upload img{
+  border-radius: 20px;
+  width: 300px;
+  height: 250px;
+}
+.quote .quote-content form .extra{
+  padding: 20px;
+}
+.quote .quote-content form .extra input[type="submit"]{
+  background-color: #ff9800;
+}
+.quote .quote-content form b{
+  color: red;
+}
+
+.operation{
+  margin-top: 50px;
+}
+.operation .operation-header{
+  text-align: center;
+}
+.operation .operation-header h2{
+  color: #ff9800;
+}
+.operation .operation-col{
+  width: 50%;
+  float: left;
+  padding: 20px;
+  text-align: center;
+}
+.operation .operation-col .operation-content{
+  margin-top: 100px;
+}
+.operation .operation-col.img{
+  border-radius: 10px;
+  background-image: url(../img/courier.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.operation .operation-col.img h2{
+  background-color: rgba(0,0,0,0.8);
+  color: #ff9800;
+  padding: 1em;
+  margin-top: 100px;
+}
+.location{
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background-color: #efefef;
+}
+.location .location-header{
+  text-align: center;
+}
+.location .location-header h2{
+  color: #ff9800;
+}
+.location .location-col{
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.location .location-col .location-content{
+  margin-top: 100px;
+}
+.location .location-col.img{
+  border-radius: 10px;
+  background-image: url(../img/abia-state.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.location .location-col.img h2{
+  background-color: rgba(0,0,0,0.8);
+  color: #ff9800;
+  padding: 1em;
+  margin-top: 100px;
+}
+/* =================================Stop of courier page=============================== */
+/* ======================================================================================== */
+/* This section is for the courier service ends here */
+
+/* This section is for the partner restaurant starts here */
+.partner{
+  background-image: url(../img/Partners/partnerBg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+.partner .partner-header{
+  text-align: center;
+  color: white;
+}
+.partner .partner-header h2{
+  color: #ff8900;
+}
+.partner .partner-content{
+  margin: 10px auto;
+}
+.partner .partner-content .col{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+  width: 31%;
+  float: left;
+}
+.partner .partner-content .col img{
+  width: 400px;
+  height: auto;
+}
+/* This section is for the partner restaurant ends here */
+
+/* This section is for the weekly special starts here */
+.special{
+  margin-top: 50px;
+}
+.special .special-header{
+  text-align: center;
+}
+.special .special-header h2{
+  color: #ff9800;
+}
+.special .special-content{
+  background-color: blue;
+}
+.special .special-content ul{
+  list-style: none;
+}
+
+.special .special-content ul li a{
+  text-decoration: none;
+  float: left;
+  width: 30%;
+  padding-left: 5%;
+  margin-bottom: 20px;
+}
+.special .special-content ul li a:hover p{
+  display: block;
+}
+.special .special-content ul li a .special1,
+.special .special-content ul li a .special2,
+.special .special-content ul li a .special3,
+.special .special-content ul li a .special4,
+.special .special-content ul li a .special5,
+.special .special-content ul li a .special6,
+.special .special-content ul li a .special7,
+.special .special-content ul li a .special8,
+.special .special-content ul li a .special9{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.special .special-content ul li a .special1{
+  background-image: url(../img/weeklyspecial/1.jpg);
+}
+.special .special-content ul li a .special2{
+  background-image: url(../img/weeklyspecial/2.jpg);
+}
+.special .special-content ul li a .special3{
+  background-image: url(../img/weeklyspecial/3.jpg);
+}
+.special .special-content ul li a .special4{
+  background-image: url(../img/weeklyspecial/4.jpg);
+}
+.special .special-content ul li a .special5{
+  background-image: url(../img/weeklyspecial/5.jpg);
+}
+.special .special-content ul li a .special6{
+  background-image: url(../img/weeklyspecial/6.jpg);
+}
+.special .special-content ul li a .special7{
+  background-image: url(../img/weeklyspecial/7.jpg);
+}
+.special .special-content ul li a .special8{
+  background-image: url(../img/weeklyspecial/8.jpg);
+}
+.special .special-content ul li a .special9{
+  background-image: url(../img/weeklyspecial/9.jpg);
+}
+
+.special .special-content ul li a p{
+  display: none;
+  background-color: gold;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+.special .special-content ul li a i{
+  background-color: rgba(0,0,0,0.7);
+  color: gold;
+  border-top-right-radius: 10px;
+  padding: 20px;
+  position: relative;
+  top: 178px;
+  text-align: center;
+  padding-top: 20px;
+}
+/* This section is for the weekly special ends here */
+
+/* This section is for the testimony starts here */
+.testimony{
+  clear: both;
+  background-image: url(../img/Testimony/testimonyBg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.testimony .testimony-header{
+  text-align: center;
+}
+.testimony .testimony-header h2{
+  color: #ff9800;
+}
+.testimony .testimony-content{
+
+}
+.testimony .testimony-content .item{
+
+  color: white
+}
+.testimony .testimony-content .item .item-image img{
+  border-radius: 50%;
+  margin: 10% 5% 20% 45%;
+  border: 5px solid #ff9800;
+}
+.testimony .testimony-content .item .item-content h4,
+.testimony .testimony-content .item .item-content h5{
+  color: white;
+}
+.testimony .testimony-content .item .item-content{
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: -200px;
+}
+/* This section is for the testimony ends here */
+
+/* This section is for the contact, both homepage and other pages starts here */
+.contact{
+  margin: 50px auto;
+}
+.contact .contact-header{
+  text-align: center;
+}
+.contact .contact-header h2{
+  color: #ff9800;
+}
+.contact .contact-col{
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.contact .contact-col .form-header{
+  text-align: center;
+}
+.contact .contact-col .form-header h6{
+  font-size: 18px;
+  text-decoration: underline;
+}
+.contact .contact-col .form-header h6 b,
+.contact .contact-col form b{
+  color: red;
+}
+.contact .contact-col form .button{
+  background-color: #2b7386;
+  color: gold;
+}
+.contact .contact-col .address-header h2{
+  color: #ff9800;
+}
+.contact .contact-col .address-header blockquote{
+  /* background-color: #2b7386; */
+  background-color: rgba(43, 115, 134,0.4);
+  border-left: 5px solid #2b7386;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.contact .contact-col .address-header blockquote ul li{
+  list-style: none;
+  display: inline;
+  margin-left: 50px;
+}
+/* This section is for the contact, both homepage and other pages ends here */
+
+/* This section is for the about page and all directories starts here */
+.about,
+.terms,
+.policy{
+  margin: 100px 10px;
+}
+.about .about-header,
+.terms .terms-header,
+.policy .policy-header{
+  text-align: center;
+  margin-top: 100px;
+}
+.about .about-header h2,
+.terms .terms-header h2,
+.policy .policy-header h2{
+  color: #ff9800;
+}
+.about .about-col,
+.terms .terms-col,
+.policy .policy-col{
+  width: 50%;
+  float: left;
+}
+.about .about-col section,
+.terms .terms-col section,
+.policy .policy-col section{
+  padding: 20px;
+}
+.about .about-col.img,
+.terms .terms-col.img,
+.policy .policy-col.img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.1);
+  background-blend-mode:color;
+  border-radius: 30px;
+  height: 540px;
+  transition: 0.2s all ease-in;
+}
+.about .about-col.img:hover,
+.terms .terms-col.img:hover,
+.policy .policy-col.img:hover{
+  background-color: rgba(0,0,0,0.7);
+  background-blend-mode:color;
+  transition: 0.3s all ease-in;
+}
+
+.about .about-col.img > div.head,
+.terms .terms-col.img > div.head,
+.policy .policy-col.img > div.head{
+  display: none;
+  padding: 200px auto;
+  background-color: rgba(0,0,0,0.4);
+  height: 275px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-right: 1px solid #ff9800;
+  border-bottom-right-radius: 100%;
+  transition: 0.2s all ease-in;
+}
+.about .about-col.img:hover > div.head,
+.terms .terms-col.img:hover > div.head,
+.policy .policy-col.img:hover > div.head{
+  display: block;
+  transition: 3s all ease-in;
+}
+.about .about-col.img > div.head h3,
+.terms .terms-col.img > div.head h3,
+.policy .policy-col.img > div.head h3{
+  padding: 100px 100px;
+  color: #ff9800;
+}
+
+.about .about-col.img > div.p,
+.terms .terms-col.img > div.p,
+.policy .policy-col.img > div.p{
+  display: none;
+  background-color: rgba(0,0,0,0.4);
+  height: 268px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-left: 1px solid #ff9800;
+  border-top-left-radius: 100%;
+  transition: 0.2s all ease-in;
+}
+.about .about-col.img:hover > div.p,
+.terms .terms-col.img:hover > div.p,
+.policy .policy-col.img:hover > div.p{
+  display: block;
+}
+.about .about-col.img > div.p p,
+.terms .terms-col.img > div.p p,
+.policy .policy-col.img > div.p p{
+  padding: 100px 0px 0px 200px;
+  color: #ff9800;
+  font-size: 20px;
+}
+.about .about-col.img{
+  background-image: url(../img/about.jpg);
+}
+.terms .terms-col.img{
+  background-image: url(../img/terms.jpg);
+}
+.policy .policy-col.img{
+  background-image: url(../img/policy.jpg);
+}
+.terms{
+  clear: both;
+}
+/* This section is for the about page and all directories ends here */
+
+/* This section is for the signup and signin starts here */
+.signup{
+  background-color: #2b7683;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 50px 10%;
+}
+.signup .signup-header{
+  text-align: center;
+}
+.signup .signup-header h2{
+  color: #ff9800;
+}
+.signup .signup-header p b,
+.signup .signup-details form .form-group label b{
+  color: red;
+}
+.signup .signup-details form .form-group p{
+  text-align: center;
+}
+.signup .signup-details form .form-group p a{
+  color: #ff9800;
+  text-decoration: none;
+}
+.signup .signup-details form .form-group input[type="submit"]{
+  background-color: #ff9800;
+}
+/* This section is for the signup and signin ends here */
+
+/* This section is for the cart section starts here */
+.cartDiv{
+  margin-bottom: 50px;
+  /* background-color: #efefef; */
+}
+.cartDiv .cart-header{
+  text-align: center;
+}
+.cartDiv .cart-header h2{
+  color: #ff9800;
+}
+.cartDiv .cart-details{
+  padding: 20px;
+}
+.cartDiv .delivery-info{
+  margin: 20px;
+}
+.cartDiv .delivery-info b{
+  color: red;
+}
+.cartDiv .controls{
+  text-align: center;
+}
+.cartDiv .controls p a{
+  /* margin-left: 20px; */
+  text-decoration: none;
+  background-color: #2b7683;
+  color: #ff9800;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.cartDiv .controls p a.active{
+  background-color: #ff9800;
+  color: #2b7683;
+}
+/* This section is for the cart section ends here */
+
+/* This section is for the Restaurant starts here  */
+.restaurantDiv{
+  padding: 20px;
+}
+.restaurantDiv .restaurant-header{
+  text-align: center;
+}
+.restaurantDiv .restaurant-header h1{
+  color: #ff9800;
+}
+.restaurantDiv .restaurant-header p{
+  font-style: italic;
+}
+.restaurantDiv .roots,
+.restaurantDiv .station,
+.restaurantDiv .delatinos,
+.restaurantDiv .place,
+.restaurantDiv .apple,
+.restaurantDiv .hoeffers,
+.restaurantDiv .choice,
+.restaurantDiv .shoprite,
+.restaurantDiv .crunches{
+  background-color: #2b7683;
+  color: white;
+}
+.restaurantDiv .tab ul{
+  list-style: none;
+}
+.restaurantDiv .tab ul li{
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+.restaurantDiv .tab .tab-content ul li a{
+  color: white;
+  border-bottom: 1px dashed black;
+}
+.restaurantDiv .tab .tab-content ul li a b{
+  float: right;
+  color: #ff9800;
+}
+/* This section is for the Restaurant ends here  */
+
+
+/* This section is for the footer starts here */
+.footer{
+  clear: both;
+  background-color: black;
+  padding: 10px;
+  color: white;
+
+}
+.footer .footer-col{
+  width: 33%;
+  padding: 0 20px;
+  float: left;
+}
+.footer .footer-col h2{
+  color: #ff9800;
+}
+.footer .footer-col h2 + div{
+  width: 20%;
+  border-bottom: 2px solid #2b7683;
+  border-radius: 10%;
+}
+.footer .footer-col h2 img{
+  width: 100px;
+  height: 50px;
+}
+.footer .footer-col ul li{
+  list-style:decimal;
+}
+.footer .footer-col form{
+  margin-top: 20px;
+}
+.footer .footer-col form center input{
+  background-color: #2b7683;
+  color: #ff9800;
+  border-radius: 10px;
+}
+.footer .footer-col .social li{
+  list-style: none;
+  display: inline;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.footer .footer-col1{
+  text-align: center;
+}
+.footer .footer-col1 a{
+  text-decoration: none;
+  color: #2b7683;
+}
+.footer .footer-col1 a:hover{
+  color: #ff9800;
+}
+/* This section is for the footer ends here */
+
+/* This section is for the cart overflow content starts here */
+.overlay{
+  background-color: rgba(0,0,0);
+  /* background-color: rgba(0,0,0,0.4); */
+  overflow: auto;
+  width: 30%;
+  color: white;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  right: 0;
+  z-index: 1;
+}
+.overlay > a{
+  color: red;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+  color: #ff9800;
+
+}
+.overlay > a:hover{
+  color: red;
+  text-decoration: none;
+}
+.overlay .overlay-content{
+  /* background-color: white; */
+}
+.overlay .overlay-content .header h2{
+  text-align: center;
+  border-bottom: 1px solid #ff9800;
+  color: #ff9800;
+}
+.overlay .overlay-content .item-section{
+
+}
+.overlay .overlay-content .item-section ul li{
+  /* display: block; */
+  list-style: decimal;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.overlay .overlay-content .item-section ul li p .item-name + a{
+  color: red;
+  float: right;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.overlay .overlay-content .item-section ul li p.item-actual-price{
+  display: none;
+}
+.overlay .overlay-content .item-section ul li .qty span{
+  margin-left: 20px;
+}
+.overlay .overlay-content .item-section ul li .qty span.fa{
+  cursor: pointer;
+}
+.overlay .overlay-content .item-section ul li .qty span.fa.fa-minus{
+  color: red;
+}
+.overlay .overlay-content .item-section ul li .qty span.fa.fa-plus{
+  color: green;
+}
+.overlay .overlay-content .item-section ul li .remove{
+  color: red;
+  cursor: pointer;
+}
+.overlay .overlay-content .item-section .total{
+  text-align: center;
+}
+.overlay .overlay-content .item-section .total h4{
+  text-align: left;
+  color: #ff9800;
+  margin-left: 10px;
+}
+.overlay .overlay-content .item-section .total h4 b{
+  color: white;
+}
+.overlay .overlay-content .item-section .total a{
+  color: #ff9800;
+  background-color: #2b7683;
+  padding: 0.8em;
+  border-radius: 10px;
+  text-decoration: none;
+}
+/* This section is for the cart overflow content ends here
+
+/* =================================================== */
+/* ===============Media query starts========================= */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* This section is for the slider starts here */
+
+  .item .slide-icon{
+    width: 200px;
+    height: 20px;
+  }
+  .item .slide-content{
+    width: 300px;
+    padding: 10px;
+  }
+  /* This section is for the slider ends here */
+
+  /* This is the section for services starts here */
+
+  .service .service-column .service-col{
+    width: 100%;
+  }
+  .service .service-column .service-col .service-content{
+    margin-top: 2px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -25px;
+  }
+  /* This is the section for services ends here */
+
+  /* This section is for the courier service starts here */
+
+  .courier .courier-column .courier-col{
+    width: 100%;
+  }
+  .agent-col{
+    width: 100%;
+    margin: 0%;
+    float: left;
+  }
+  .delivery .delivery-content{
+    margin-left: 20px;
+  }
+  .delivery .delivery-content .delivery-col{
+    width: 100%;
+    float: left;
+    margin-left: 0%;
+  }
+  .delivery .delivery-content .delivery-col span{
+    margin-left: -30px;
+  }
+  .quote .quote-content form .form-col{
+    width: 100%;
+  }
+  .operation .operation-col{
+    width: 100%;
+  }
+  .location .location-col{
+    width: 100%;
+  }
+  /* This section is for the courier service ends here */
+
+  /* This section is for the partner restaurant starts here */
+
+  .partner .partner-content .col{
+    margin-left: 2px;
+    margin-bottom: 20px;
+    padding: 40px;
+    width: 100%;
+    float: left;
+  }
+  /* This section is for the partner restaurant ends here */
+
+  /* This section is for the about page and all directories starts here */
+  .about .about-col,
+  .terms .terms-col,
+  .policy .policy-col{
+    width: 100%;
+  }
+  /* This section is for the about page and all directories ends here */
+
+  /* This section is for the weekly special starts here */
+
+  .special .special-content ul li a{
+    width: 100%;
+    padding-left: 0px;
+    margin-left: -20px;
+  }
+  /* This section is for the weekly special ends here */
+
+  /* This section is for the testimony starts here */
+  .testimony .testimony-content .item .item-image img{
+    margin: 20% 0% 80% 25%;
+  }
+  /* This section is for the testimony ends here */
+
+  /* This section is for the contact, both homepage and other pages starts here */
+  .contact .contact-col{
+    width: 100%;
+  }
+  /* This section is for the contact, both homepage and other pages ends here */
+
+  /* This section is for the footer starts here */
+
+  .footer .footer-col{
+    width: 100%;
+  }
+  /* This section is for the footer ends here */
+
+
+}
+/* =================The query for a higher screen size starts here============= */
+@media (min-width: 481px) and (max-width: 764px) {
+  /* This section is for the slider starts here */
+
+  .item .slide-content{
+    width: 500px;
+  }
+  /* This section is for the slider ends here */
+
+  /* This is the section for services starts here */
+  .service .service-column .service-col{
+    width: 100%;
+    padding-right: 50px;
+  }
+  /* This is the section for services ends here */
+
+  /* This section is for the courier service starts here */
+  .courier .courier-column .courier-col{
+    width: 100%;
+  }
+  .agent-col{
+    width: 100%;
+    margin: 0%;
+    float: left;
+  }
+  .delivery .delivery-content{
+    margin-left: 20px;
+  }
+  .delivery .delivery-content .delivery-col{
+    width: 100%;
+    float: left;
+    margin-left: 0%;
+  }
+  .delivery .delivery-content .delivery-col span{
+    margin-left: -30px;
+  }
+  .quote .quote-content form .form-col{
+    width: 100%;
+  }
+  .operation .operation-col{
+    width: 100%;
+  }
+  .location .location-col{
+    width: 100%;
+  }
+  /* This section is for the courier service ends here */
+  /* This section is for the partner restaurant starts here */
+
+  .partner .partner-content .col{
+    margin-left: 1%;
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 48%;
+    float: left;
+  }
+  /* This section is for the partner restaurant ends here */
+
+  /* This section is for the about page and all directories starts here */
+  .about .about-col,
+  .terms .terms-col,
+  .policy .policy-col{
+    width: 100%;
+  }
+  /* This section is for the about page and all directories ends here */
+
+  /* This section is for the weekly special starts here */
+  .special{
+    display: none;
+  }
+  /* This section is for the weekly special ends here */
+
+  /* This section is for the testimony starts here */
+  .testimony .testimony-content .item .item-image img{
+    margin: 10% 5% 40% 38%;
+  }
+  /* This section is for the testimony ends here */
+
+
+  /* This section is for the contact, both homepage and other pages starts here */
+  .contact .contact-col{
+    width: 100%;
+  }
+  /* This section is for the contact, both homepage and other pages ends here */
+
+  /* This section is for the footer starts here */
+  .footer .footer-col{
+    width: 100%;
+  }
+  /* This section is for the footer ends here */
+
+
+
+
+
+
+
+}
+
+/* ================Media Query start========================== */
+/* ========================================================= */

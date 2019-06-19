@@ -1,0 +1,4 @@
+div
+<?phg
+echo "string";
+?>
